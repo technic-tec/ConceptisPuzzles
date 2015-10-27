@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Guid:</strong>
+  <%= @puzzle.guid %>
+</p>
+
+<p>
+  <strong>Codefamily:</strong>
+  <%= @puzzle.codeFamily %>
+</p>
+
+<p>
+  <strong>Codevariant:</strong>
+  <%= @puzzle.codeVariant %>
+</p>
+
+<p>
+  <strong>Codemodel:</strong>
+  <%= @puzzle.codeModel %>
+</p>
+
+<p>
+  <strong>Serialnumber:</strong>
+  <%= @puzzle.serialNumber %>
+</p>
+
+<p>
+  <strong>Versionmajor:</strong>
+  <%= @puzzle.versionMajor %>
+</p>
+
+<p>
+  <strong>Versionminor:</strong>
+  <%= @puzzle.versionMinor %>
+</p>
+
+<p>
+  <strong>Builderversion:</strong>
+  <%= @puzzle.builderVersion %>
+</p>
+
+<p>
+  <strong>Creationdate:</strong>
+  <%= @puzzle.creationDate %>
+</p>
+
+<p>
+  <strong>Releasedate:</strong>
+  <%= @puzzle.releaseDate %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @puzzle.data %>
+</p>
+
+<%= link_to 'Edit', edit_puzzle_path(@puzzle) %> |
+<%= link_to 'Back', puzzles_path %>

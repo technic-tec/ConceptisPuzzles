@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guid: MyString
+  codeFamily: 1
+  codeVariant: 1
+  codeModel: MyString
+  serialNumber: MyString
+  versionMajor: 1
+  versionMinor: 1
+  builderVersion: MyString
+  creationDate: 2015-10-27
+  releaseDate: 2015-10-27
+  data: MyText
+
+two:
+  guid: MyString
+  codeFamily: 1
+  codeVariant: 1
+  codeModel: MyString
+  serialNumber: MyString
+  versionMajor: 1
+  versionMinor: 1
+  builderVersion: MyString
+  creationDate: 2015-10-27
+  releaseDate: 2015-10-27
+  data: MyText

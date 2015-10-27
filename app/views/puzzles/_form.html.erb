@@ -1,0 +1,61 @@
+<%= form_for(@puzzle) do |f| %>
+  <% if @puzzle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@puzzle.errors.count, "error") %> prohibited this puzzle from being saved:</h2>
+
+      <ul>
+      <% @puzzle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :guid %><br>
+    <%= f.text_field :guid %>
+  </div>
+  <div class="field">
+    <%= f.label :codeFamily %><br>
+    <%= f.number_field :codeFamily %>
+  </div>
+  <div class="field">
+    <%= f.label :codeVariant %><br>
+    <%= f.number_field :codeVariant %>
+  </div>
+  <div class="field">
+    <%= f.label :codeModel %><br>
+    <%= f.text_field :codeModel %>
+  </div>
+  <div class="field">
+    <%= f.label :serialNumber %><br>
+    <%= f.text_field :serialNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :versionMajor %><br>
+    <%= f.number_field :versionMajor %>
+  </div>
+  <div class="field">
+    <%= f.label :versionMinor %><br>
+    <%= f.number_field :versionMinor %>
+  </div>
+  <div class="field">
+    <%= f.label :builderVersion %><br>
+    <%= f.text_field :builderVersion %>
+  </div>
+  <div class="field">
+    <%= f.label :creationDate %><br>
+    <%= f.date_select :creationDate %>
+  </div>
+  <div class="field">
+    <%= f.label :releaseDate %><br>
+    <%= f.date_select :releaseDate %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.text_area :data %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
