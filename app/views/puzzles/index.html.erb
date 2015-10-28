@@ -1,47 +1,8 @@
-<p id="notice"><%= notice %></p>
+<div id="puzzles"></div>
 
-<h1>Listing Puzzles</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Guid</th>
-      <th>Codefamily</th>
-      <th>Codevariant</th>
-      <th>Codemodel</th>
-      <th>Serialnumber</th>
-      <th>Versionmajor</th>
-      <th>Versionminor</th>
-      <th>Builderversion</th>
-      <th>Creationdate</th>
-      <th>Releasedate</th>
-      <th>Data</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @puzzles.each do |puzzle| %>
-      <tr>
-        <td><%= puzzle.guid %></td>
-        <td><%= puzzle.codeFamily %></td>
-        <td><%= puzzle.codeVariant %></td>
-        <td><%= puzzle.codeModel %></td>
-        <td><%= puzzle.serialNumber %></td>
-        <td><%= puzzle.versionMajor %></td>
-        <td><%= puzzle.versionMinor %></td>
-        <td><%= puzzle.builderVersion %></td>
-        <td><%= puzzle.creationDate %></td>
-        <td><%= puzzle.releaseDate %></td>
-        <td><%= puzzle.data %></td>
-        <td><%= link_to 'Show', puzzle %></td>
-        <td><%= link_to 'Edit', edit_puzzle_path(puzzle) %></td>
-        <td><%= link_to 'Destroy', puzzle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Puzzle', new_puzzle_path %>
+<script type="text/javascript">
+  $(function() {
+      window.router = new ConceptisPuzzles.Routers.PuzzlesRouter({posts: <%= @posts.to_json.html_safe -%>});
+      Backbone.history.start();
+  });
+</script>
