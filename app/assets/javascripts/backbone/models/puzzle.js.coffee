@@ -1,4 +1,4 @@
-class ConceptisPuzzles.Models.Puzzle extends Backbone.Model
+class ConceptisPuzzles.Models.Puzzle extends Backbone.RelationalModel
   paramRoot: 'puzzle'
 
   defaults:
@@ -13,6 +13,16 @@ class ConceptisPuzzles.Models.Puzzle extends Backbone.Model
     creationDate: null
     releaseDate: null
     data: null
+
+  relations: [
+    type: Backbone.HasMany
+    key: 'properties'
+    relatedModel: 'ConceptisPuzzles.Models.Property'
+    collectionType: 'ConceptisPuzzles.Collections.PropertiesCollection'
+    includedInJSON: true
+    reverseRelation:
+      key: 'puzzle_id'
+  ]
 
 class ConceptisPuzzles.Collections.PuzzlesCollection extends Backbone.Collection
   model: ConceptisPuzzles.Models.Puzzle

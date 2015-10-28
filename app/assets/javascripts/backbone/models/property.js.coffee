@@ -1,4 +1,4 @@
-class ConceptisPuzzles.Models.Property extends Backbone.Model
+class ConceptisPuzzles.Models.Property extends Backbone.RelationalModel
   paramRoot: 'property'
 
   defaults:
