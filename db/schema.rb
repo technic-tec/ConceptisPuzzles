@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151027094200) do
+ActiveRecord::Schema.define(version: 20151028024138) do
+
+  create_table "properties", force: :cascade do |t|
+    t.string   "type"
+    t.string   "name"
+    t.string   "value"
+    t.string   "unit"
+    t.integer  "puzzle_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "puzzles", force: :cascade do |t|
     t.string   "guid"
