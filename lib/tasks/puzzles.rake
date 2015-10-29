@@ -34,7 +34,7 @@ namespace :puzzles do
         if elem.name == 'properties'
           elem.element_children.each { |p|
             pid += 1
-            property = {"id" => pid, "type" => p.name, "puzzle_id" => id}
+            property = {"id" => pid, "attr_type" => p.name, "puzzle_id" => id}
             p.attributes.each { |key, attr|
               property[key] = attr.value
             }

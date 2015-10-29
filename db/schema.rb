@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151028024138) do
+ActiveRecord::Schema.define(version: 20151029092650) do
 
   create_table "properties", force: :cascade do |t|
-    t.string   "type"
+    t.string   "attr_type"
     t.string   "name"
     t.string   "value"
     t.string   "unit"
@@ -32,8 +32,8 @@ ActiveRecord::Schema.define(version: 20151028024138) do
     t.integer  "versionMajor"
     t.integer  "versionMinor"
     t.string   "builderVersion"
-    t.date     "creationDate"
-    t.date     "releaseDate"
+    t.datetime "creationDate"
+    t.datetime "releaseDate"
     t.text     "data"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
