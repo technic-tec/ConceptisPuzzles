@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'active_record/fixtures'
+ActiveRecord::FixtureSet.create_fixtures(Rails.root.join('config'), 'puzzles')
+ActiveRecord::FixtureSet.create_fixtures(Rails.root.join('config'), 'properties')
