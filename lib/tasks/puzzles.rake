@@ -38,6 +38,7 @@ namespace :puzzles do
             p.attributes.each { |key, attr|
               property[key] = attr.value
             }
+            property["value"] ||= p.text
             properties["prop#{pid}"] = property
           }
         else
