@@ -4,7 +4,8 @@ class PuzzlesController < ApplicationController
   # GET /puzzles
   # GET /puzzles.json
   def index
-    @puzzles = Puzzle.all
+    @puzzles = Puzzle.includes(:properties).limit(12)
+    puts @puzzles.to_json.html_safe
   end
 
   # GET /puzzles/1
