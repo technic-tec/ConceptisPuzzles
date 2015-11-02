@@ -7,5 +7,13 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 require 'active_record/fixtures'
-ActiveRecord::FixtureSet.create_fixtures(Rails.root.join('config'), 'puzzles')
-ActiveRecord::FixtureSet.create_fixtures(Rails.root.join('config'), 'properties')
+File.open(Rails.root.join('config', 'puzzles.yml')) { |f|
+  Psych.load_stream(f) {|doc|
+    Puzzle.create! doc
+  }
+}
+File.open(Rails.root.join('config', 'properties.yml')) { |f|
+  Psych.load_stream(f) {|doc|
+    Property.create! doc
+  }
+}
