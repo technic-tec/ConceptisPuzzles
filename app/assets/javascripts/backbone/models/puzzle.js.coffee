@@ -27,3 +27,8 @@ class ConceptisPuzzles.Models.Puzzle extends Backbone.RelationalModel
 class ConceptisPuzzles.Collections.PuzzlesCollection extends Backbone.Collection
   model: ConceptisPuzzles.Models.Puzzle
   url: '/puzzles'
+  parse: (resp)->
+    this.perPage = resp.per_page
+    this.page = resp.page
+    this.total = resp.total
+    resp.puzzles

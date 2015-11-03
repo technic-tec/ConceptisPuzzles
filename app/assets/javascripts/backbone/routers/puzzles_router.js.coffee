@@ -6,6 +6,7 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
   routes:
     "new"      : "newPuzzle"
     "index"    : "index"
+    "p:pg"     : "index"
     ":id/edit" : "edit"
     ":id"      : "show"
     ".*"        : "index"
@@ -14,9 +15,12 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
     @view = new ConceptisPuzzles.Views.Puzzles.NewView(collection: @puzzles)
     $("#puzzles").html(@view.render().el)
 
-  index: ->
+  index: (pg)->
     @view = new ConceptisPuzzles.Views.Puzzles.IndexView(collection: @puzzles)
     $("#puzzles").html(@view.render().el)
+    if pg is undefined or pg is null
+      pg = 1
+    @puzzles.fetch({data: {page: pg}, reset: true})
 
   show: (id) ->
     puzzle = @puzzles.get(id)

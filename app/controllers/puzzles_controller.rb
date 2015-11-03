@@ -4,7 +4,11 @@ class PuzzlesController < ApplicationController
   # GET /puzzles
   # GET /puzzles.json
   def index
-    @puzzles = Puzzle.limit(12)
+    @page = (params[:page] || 1).to_i
+    @page = 1 if @page < 1
+    @perPage = (params[:per_page] || 12).to_i
+    @total = Puzzle.count;
+    @puzzles = Puzzle.limit(@perPage).offset(@perPage*(@page-1))
   end
 
   # GET /puzzles/1
