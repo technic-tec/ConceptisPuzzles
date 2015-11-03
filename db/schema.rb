@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151029092650) do
+ActiveRecord::Schema.define(version: 20151103021645) do
 
   create_table "properties", force: :cascade do |t|
     t.string   "attr_type"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20151029092650) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "properties", ["puzzle_id"], name: "index_properties_on_puzzle_id"
 
   create_table "puzzles", force: :cascade do |t|
     t.string   "guid"
