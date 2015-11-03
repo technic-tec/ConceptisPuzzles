@@ -8,12 +8,16 @@
 
 require 'active_record/fixtures'
 File.open(Rails.root.join('config', 'puzzles.yml')) { |f|
-  Psych.load_stream(f) {|doc|
-    Puzzle.create! doc
+  ActiveRecord::Base.transaction {
+    Psych.load_stream(f) {|doc|
+      Puzzle.create! doc
+    }
   }
 }
 File.open(Rails.root.join('config', 'properties.yml')) { |f|
-  Psych.load_stream(f) {|doc|
-    Property.create! doc
+  ActiveRecord::Base.transaction {
+    Psych.load_stream(f) {|doc|
+      Property.create! doc
+    }
   }
 }
