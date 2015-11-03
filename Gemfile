@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Use backbone as the JavaScript client MVC
-gem 'rails-backbone'
+gem 'rails-backbone', github:'codebrew/backbone-rails'
 gem 'tzinfo', platform: [ 'mingw', 'mswin', 'jruby']
 gem 'tzinfo-data', platform: [ 'mingw', 'mswin', 'jruby']
 
