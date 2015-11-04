@@ -16,6 +16,14 @@ class PuzzlesController < ApplicationController
   def show
   end
 
+  # GET /puzzles/config.xml
+  def configPuzzles
+    @puzzle_config = Rails.application.config.x.PUZZLE_CONFIG
+    respond_to do |format|
+        format.xml
+    end
+  end
+
   # GET /puzzles/new
   def new
     @puzzle = Puzzle.new
