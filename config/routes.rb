@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   resources :puzzles do
     collection do
-      get 'config' => 'puzzles#configPuzzles'
+      get 'configure'
+    end
+    member do
+      post 'save'
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

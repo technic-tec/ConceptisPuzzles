@@ -1,5 +1,6 @@
 class PuzzlesController < ApplicationController
   before_action :set_puzzle, only: [:show, :edit, :update, :destroy]
+  before_action :set_puzzle_config, only: [:show, :index, :configure]
 
   # GET /puzzles
   # GET /puzzles.json
@@ -17,8 +18,7 @@ class PuzzlesController < ApplicationController
   end
 
   # GET /puzzles/config.xml
-  def configPuzzles
-    @puzzle_config = Rails.application.config.x.PUZZLE_CONFIG
+  def configure
     respond_to do |format|
         format.xml
     end
@@ -77,6 +77,10 @@ class PuzzlesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_puzzle
       @puzzle = Puzzle.find(params[:id])
+    end
+
+    def set_puzzle_config
+      @puzzle_config = Rails.application.config.x.PUZZLE_CONFIG
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

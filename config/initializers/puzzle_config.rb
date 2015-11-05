@@ -5,14 +5,14 @@ class PuzzleConfig
     attr_reader :flags
     def initialize(variant)
       (variant>"genealogy").first.attributes.each {|key, val|
-        self.instance_variable_set("@#{key}", val)
+        self.instance_variable_set("@#{key}", val.value)
         Variant.class_eval{attr_reader key}
       }
       @flags = {}
       flag = (variant>"flags").first
       if(flag)
         flag.attributes.each {|key, val|
-          @flags[key] = val
+          @flags[key] = val.value
         }
       end
     end
@@ -22,12 +22,12 @@ class PuzzleConfig
     attr_reader :flags, :background, :variants
     def initialize(family)
       (family>"genealogy").first.attributes.each {|key, val|
-        self.instance_variable_set("@#{key}", val)
+        self.instance_variable_set("@#{key}", val.value)
         Family.class_eval{attr_reader key}
       }
       @flags = {}
       (family>"flags").first.attributes.each {|key, val|
-        @flags[key] = val
+        @flags[key] = val.value
       }
       @background = (family>"palette/color[name=\"background\"]").first.attr('rgb')
       @variants = {}
