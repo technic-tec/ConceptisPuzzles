@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :puzzles do
     collection do
-      get 'configure'
+      get 'configure', defaults: {format: 'xml'}
     end
     member do
       post 'save'

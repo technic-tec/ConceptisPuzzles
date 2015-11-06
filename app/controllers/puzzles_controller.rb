@@ -17,6 +17,14 @@ class PuzzlesController < ApplicationController
   def show
   end
 
+  # POST /puzzles/1/save
+  # POST /puzzles/1/save.json
+  def save
+    respond_to do |format|
+      format.html { render text: "OK" }
+    end
+  end
+
   # GET /puzzles/config.xml
   def configure
     respond_to do |format|
