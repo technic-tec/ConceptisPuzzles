@@ -1,4 +1,5 @@
 <div class="content">
+<% if (xml_url) { %>
 <object type="application/x-shockwave-flash" data="/flash/3/34.swf" width="100%" height="100%" id="loader">
 <param name="quality" value="high" />
 <param name="movie" value="/flash/3/34.swf" />
@@ -7,4 +8,5 @@
 <param name="wmode" value="window" />
 <param name="flashVars" value="cafurl=<%= xml_url %>&amp;configurl=<%= config_url %>&amp;mode=player&amp;free=1&amp;saveurl=<%= save_url %>&amp;bgcol=<%= family_background %>" />
 </object>
+<% } %>
 </div>

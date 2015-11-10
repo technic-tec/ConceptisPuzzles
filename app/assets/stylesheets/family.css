@@ -1,0 +1,1060 @@
+/*	--	
+	--	Pic-a-Pix */
+
+.pap .sidebar, .pap .history div.sidestory, 
+.pap .dctitle, 
+.blocklink li.pap, 
+.blocklink ul.pap li			        { background-color: #bcced0; }
+.pap .block, .pap .content, .papbody, 
+.channel .pap							{ background-color: #e3eaeb; }
+.pap li.obscured						{ color: #e3eaeb; }
+
+.pap a:visited, .footer li.pap a, .pap a:link, 
+.pap .paging .prev a:visited, .pap .paging .next a:visited,
+.pap h1, .pap h2, .pap h3, .pap h4, .pap h5,
+.pap dt, .pap .brand, .pap .color, 
+.pap a.abslink:link .arrow, .pap .db_table th, 
+.pap .myfam a:hover, .pap #updatemsg,
+.pap div.topop a:visited				{ color: #5d878b; }
+.pap .familybutton						{ background-color: #5d878b;}
+
+.pap .wrappedimage, 
+div.pap h2, 
+.pap .fragment, .pap #updatemsg,
+.pap .history .fragment,
+.pap .familyBorderColor					{ border-color: #5d878b; }
+
+.pap .infobutton a:link, 
+.pap .infobutton a:visited				{border-color: #e3eaeb;}
+.pap .infobutton a:hover				{ border-color: #5d878b;  color: #5d878b; }
+
+.pap .tips h2.general					{ background-image: url("../../picture/6/70.gif"); }
+.pap .tips h2.paper						{ background-image: url("../../picture/6/112.gif"); }
+.pap .tips h2.computer					{ background-image: url("../../picture/6/153.gif"); }
+
+.pap #rulesIcon							{ background-image: url("../../picture/5/162.gif"); }
+.pap #tutorialIcon						{ background-image: url("../../picture/5/120.gif"); }
+.pap #interactiveIcon					{ background-image: url("../../picture/5/1163.gif"); }
+.pap #techniquesIcon					{ background-image: url("../../picture/5/1164.gif"); } 
+.pap #tipsIcon							{ background-image: url("../../picture/5/42.gif"); } 
+.pap #historyIcon						{ background-image: url("../../picture/5/79.gif"); }
+.pap #samplesIcon						{ background-image: url("../../picture/5/2541.gif"); }
+/*C4 icons */
+.pap .lastNextUpdate span				{ background-image: url("../../picture/20/190.gif"); }
+.pap .credits a							{ background-image: url("../../picture/30/132.gif"); }
+.pap .discount a						{ background-image: url("../../picture/31/132.gif"); }
+
+/*End C4 icons */
+
+.pap ul.circle li						{ background-image: url("../../picture/7/149.gif"); }
+.pap ul.triangle li,
+.pap ul.trianglelink li a,
+.pap .paging .next a					{ background-image: url("../../picture/8/28.gif"); }
+.pap .paging .prev a					{ background-image: url("../../picture/33/28.gif"); }
+.pap .playnewpuzzles					{ background-image: url("../../picture/34/132.gif"); }
+.pap .select							{ background-image: url("../../picture/36/132.gif"); }
+.pap .puzzleinfoleftbar				    { background-image: url("../../picture/39/132.jpg");}
+
+
+/*	--	
+	--	Link-a-Pix */
+
+.lap .sidebar, .lap .history div.sidestory, 
+.lap .dctitle,
+.blocklink li.lap, 
+.blocklink ul.lap li					{ background-color: #bdd2e6; }
+.lap .block, .lap .content, .lapbody,
+.channel .lap							{ background-color: #e3ecf5; }
+.lap li.obscured						{ color: #e3ecf5; }
+
+.lap a:visited, .footer li.lap a, .lap a:link,
+.lap .paging .prev a:visited, .lap .paging .next a:visited,
+.lap h1, .lap h2, .lap h3, .lap h4, .lap h5,
+.lap dt, .lap .brand, .lap .color,
+.lap a.abslink:link .arrow, 
+.lap .db_table th, 
+.lap .myfam a:hover, .lap #updatemsg,
+.lap div.topop a:visited				{ color: #4a98bf; }
+.lap .familybutton						{ background-color: #4a98bf;}
+
+.lap .wrappedimage, 
+div.lap h2, 
+.lap .fragment, .lap #updatemsg,
+.lap .history .fragment,
+.lap .familyBorderColor					{ border-color: #4a98bf; }
+
+.lap .infobutton a:link, 
+.lap .infobutton a:visited				{border-color: #e3ecf5;}
+.lap .infobutton a:hover				{ border-color: #4a98bf;  color: #4a98bf; }
+
+.lap .tips h2.general					{ background-image: url("../../picture/6/3.gif"); }
+.lap .tips h2.paper						{ background-image: url("../../picture/6/7.gif"); }
+.lap .tips h2.computer					{ background-image: url("../../picture/6/51.gif"); }
+
+.lap #tutorialIcon						{ background-image: url("../../picture/5/89.gif"); }
+.lap #rulesIcon							{ background-image: url("../../picture/5/130.gif"); }
+.lap #tipsIcon							{ background-image: url("../../picture/5/36.gif"); } 
+.lap #interactiveIcon					{ background-image: url("../../picture/5/1166.gif"); } 
+.lap #techniquesIcon					{ background-image: url("../../picture/5/1165.gif"); } 
+.lap #historyIcon						{ background-image: url("../../picture/5/63.gif"); }
+.lap #samplesIcon						{ background-image: url("../../picture/5/2543.gif"); }
+/*C4 icons */
+.lap .lastNextUpdate span				{ background-image: url("../../picture/20/191.gif"); }
+.lap .credits a							{ background-image: url("../../picture/30/135.gif"); }
+.lap .discount a						{ background-image: url("../../picture/31/135.gif"); }
+/*End C4 icons */
+
+.lap ul.circle li						{ background-image: url("../../picture/7/26.gif"); }
+.lap ul.triangle li,
+.lap ul.trianglelink li a,
+.lap .paging .next a					{ background-image: url("../../picture/8/68.gif"); }
+.lap .paging .prev a					{ background-image: url("../../picture/33/68.gif"); }
+.lap .playnewpuzzles					{ background-image: url("../../picture/34/135.gif"); }
+.lap .select							{ background-image: url("../../picture/36/135.gif"); }
+.lap .puzzleinfoleftbar				    { background-image: url("../../picture/39/135.jpg");}
+/*	--	
+	--	Fill-a-Pix */
+
+.fap .sidebar, .fap .history div.sidestory, 
+.fap .dctitle, 
+.blocklink li.fap, 
+.blocklink ul.fap li					{ background-color: #e3ddbb; }
+
+.fap .block, .fap .content, .fapbody,
+.channel .fap							{ background-color: #f3f0e1; }
+.fap li.obscured						{ color: #f3f0e1; }
+
+.fap a:visited, .footer li.fap a, .fap a:link,
+.fap .paging .prev a:visited, .fap .paging .next a:visited,
+.fap h1, .fap h2, .fap h3, .fap h4, .fap h5,
+.fap dt, .fap .brand, .fap .color,
+.fap a.abslink:link .arrow,
+.fap .db_table th,
+.fap .myfam a:hover, .fap #updatemsg,
+.fap div.topop a:visited				{ color: #a29100; }
+.fap .familybutton						{ background-color: #a29100;}
+
+.fap .wrappedimage, 
+div.fap h2, 
+.fap .fragment, 
+.fap .history .fragment,
+.fap #updatemsg,
+.fap .familyBorderColor					{ border-color: #a29100; }
+	
+.fap .infobutton a:link, 
+.fap .infobutton a:visited				{border-color: #f3f0e1;}
+.fap .infobutton a:hover				{ border-color: #a29100;  color: #a29100; }
+
+.fap .tips h2.general					{ background-image: url("../../picture/6/126.gif"); }
+.fap .tips h2.paper						{ background-image: url("../../picture/6/2.gif"); }
+.fap .tips h2.computer					{ background-image: url("../../picture/6/6.gif"); }
+
+.fap #tutorialIcon						{ background-image: url("../../picture/5/50.gif"); }
+.fap #rulesIcon							{ background-image: url("../../picture/5/88.gif"); }
+.fap #tipsIcon							{ background-image: url("../../picture/5/129.gif"); } 
+.fap #interactiveIcon					{ background-image: url("../../picture/5/1167.gif"); }
+.fap #techniquesIcon					{ background-image: url("../../picture/5/1168.gif"); } 
+.fap #historyIcon						{ background-image: url("../../picture/5/45.gif"); }
+.fap #samplesIcon						{ background-image: url("../../picture/5/2544.gif"); }
+/*C4 icons */
+.fap .lastNextUpdate span				{ background-image: url("../../picture/20/192.gif"); }
+.fap .credits a							{ background-image: url("../../picture/30/85.gif"); }
+.fap .discount a						{ background-image: url("../../picture/31/85.gif"); }
+/*End C4 icons */
+
+.fap ul.circle li						{ background-image: url("../../picture/7/102.gif"); }
+.fap ul.triangle li,
+.fap ul.trianglelink li a,
+.fap .paging .next a					{ background-image: url("../../picture/8/65.gif"); }
+.fap .paging .prev a					{ background-image: url("../../picture/33/65.gif"); }
+.fap .playnewpuzzles					{ background-image: url("../../picture/34/85.gif"); }
+.fap .select							{ background-image: url("../../picture/36/85.gif"); }
+.fap .puzzleinfoleftbar				    { background-image: url("../../picture/39/85.jpg");}
+/*	--	
+	--	Maze-a-Pix */
+
+.map .sidebar, .map .history div.sidestory, 
+.map .dctitle, 
+.blocklink li.map, 
+.blocklink ul.map li					{ background-color: #cecfaf; }
+
+.map .block, .map .content, .mapbody,
+.channel .map							{ background-color: #eaebdd; }
+.map li.obscured						{ color: #eaebdd; }
+
+.map a:visited, .footer li.map a, .map a:link,
+.map .paging .prev a:visited, .map .paging .next a:visited,
+.map h1, .map h2, .map h3, .map h4, .map h5,
+.map dt, .map .brand, .map .color,
+.map a.abslink:link .arrow,
+.map .db_table th, 
+.map .myfam a:hover, .map #updatemsg,
+.map div.topop a:visited				{ color: #787d40; }
+.map .familybutton						{ background-color: #787d40;}
+
+.map .wrappedimage, 
+div.map h2, 
+.map .fragment, .map #updatemsg,
+.map .history .fragment,
+.map .familyBorderColor					{ border-color: #787d40; }
+	
+.map .infobutton a:link, 
+.map .infobutton a:visited				{border-color: #eaebdd;}
+.map .infobutton a:hover				{ border-color: #787d40;  color: #787d40; }
+
+.map .tips h2.general					{ background-image: url("../../picture/6/166.gif"); }
+.map .tips h2.paper						{ background-image: url("../../picture/6/46.gif"); }
+.map .tips h2.computer					{ background-image: url("../../picture/6/83.gif"); }
+
+.map #tutorialIcon						{ background-image: url("../../picture/5/125.gif"); }
+.map #rulesIcon							{ background-image: url("../../picture/5/1.gif"); }
+.map #tipsIcon							{ background-image: url("../../picture/5/5.gif"); } 
+.map #interactiveIcon					{ background-image: url("../../picture/5/1170.gif"); }
+.map #techniquesIcon					{ background-image: url("../../picture/5/1169.gif"); } 
+.map #historyIcon						{ background-image: url("../../picture/5/119.gif"); }
+.map #samplesIcon						{ background-image: url("../../picture/5/2545.gif"); }
+/*C4 icons */
+.map .lastNextUpdate span				{ background-image: url("../../picture/20/193.gif"); }
+.map .credits a							{ background-image: url("../../picture/30/127.gif"); }
+.map .discount a						{ background-image: url("../../picture/31/127.gif"); }
+/*End C4 icons */
+
+.map ul.circle li						{ background-image: url("../../picture/7/18.gif"); }
+.map ul.triangle li,
+.map ul.trianglelink li a,
+.map .paging .next a					{ background-image: url("../../picture/8/22.gif"); }
+.map .paging .prev a					{ background-image: url("../../picture/33/22.gif"); }
+.map .playnewpuzzles					{ background-image: url("../../picture/34/127.gif"); }
+.map .select							{ background-image: url("../../picture/36/127.gif"); }
+.map .puzzleinfoleftbar				    { background-image: url("../../picture/39/127.jpg");}
+/*	--	
+	--	Dot-a-Pix */
+
+.dap .sidebar, .dap .history div.sidestory, 
+.dap .dctitle, 
+.blocklink li.dap, 
+.blocklink ul.dap li					{ background-color: #d0d1e4; }
+
+.dap .block, .dap .content, .dapbody,
+.channel .dap							{ background-color: #e8e8f2; }
+.dap li.obscured						{ color: #e8e8f2; }
+
+.dap a:visited, .footer li.dap a, .dap a:link, 
+.dap .paging .prev a:visited, .dap .paging .next a:visited,
+.dap h1, .dap h2, .dap h3, .dap h4, .dap h5,
+.dap dt, .dap .brand, .dap .color,
+.dap a.abslink:link .arrow,
+.dap .db_table th, 
+.dap .myfam a:hover, .dap #updatemsg,
+.dap div.topop a:visited				{ color: #8191b6; }
+.dap .familybutton						{ background-color: #8191b6;}
+
+.dap .wrappedimage, 
+div.dap h2, 
+.dap .fragment, .dap #updatemsg,
+.dap .history .fragment,
+.dap .familyBorderColor					{ border-color: #8191b6; }
+	
+.dap .infobutton a:link, 
+.dap .infobutton a:visited				{border-color: #e8e8f2;}
+.dap .infobutton a:hover				{ border-color: #8191b6;  color: #8191b6; }
+
+.dap .tips h2.general					{ background-image: url("../../picture/6/160.gif"); }
+.dap .tips h2.paper						{ background-image: url("../../picture/6/39.gif"); }
+.dap .tips h2.computer					{ background-image: url("../../picture/6/17.gif"); }
+
+.dap #tutorialIcon						{ background-image: url("../../picture/5/20.gif"); }
+.dap #rulesIcon							{ background-image: url("../../picture/5/62.gif"); }
+.dap #tipsIcon							{ background-image: url("../../picture/5/77.gif"); } 
+.dap #interactiveIcon					{ background-image: url("../../picture/5/1172.gif"); }
+.dap #techniquesIcon					{ background-image: url("../../picture/5/1171.gif"); } 
+.dap #historyIcon						{ background-image: url("../../picture/5/118.gif"); }
+.dap #samplesIcon						{ background-image: url("../../picture/5/2546.gif"); }
+/*C4 icons */
+.dap .lastNextUpdate span				{ background-image: url("../../picture/20/194.gif"); }
+.dap .credits a							{ background-image: url("../../picture/30/58.gif"); }
+.dap .discount a						{ background-image: url("../../picture/31/58.gif"); }
+/*End C4 icons */
+
+.dap ul.circle li						{ background-image: url("../../picture/7/150.gif"); }
+.dap ul.triangle li,
+.dap ul.trianglelink li a,
+.dap .paging .next a					{ background-image: url("../../picture/8/98.gif"); }
+.dap .paging .prev a					{ background-image: url("../../picture/33/98.gif"); }
+.dap .playnewpuzzles					{ background-image: url("../../picture/34/58.gif"); }
+.dap .select							{ background-image: url("../../picture/36/58.gif"); }
+.dap .puzzleinfoleftbar				    { background-image: url("../../picture/39/58.jpg");}
+/*	--	
+	--	Sudoku */
+	
+.sud .sidebar, .sud .history div.sidestory, 
+.sud .dctitle,
+.blocklink li.sud, 
+.blocklink ul.sud li		            { background-color: #ddcbb1; }
+
+.sud .block, .sud .content, .sudbody, 
+.channel .sud							{ background-color: #f2eae0; }
+.sud li.obscured						{ color: #f2eae0; }
+
+.sud a:visited, .footer li.sud a, .sud a:link, 
+.sud .paging .prev a:visited, .sud .paging .next a:visited,
+.sud h1, .sud h2, .sud h3, .sud h4, .sud h5,
+.sud dt, .sud .brand, .sud .color,
+.sud a.abslink:link .arrow,
+.sud .db_table th, 
+.sud .myfam a:hover, .sud #updatemsg,
+.sud div.topop a:visited				{ color: #9b6d5f; }
+.sud .familybutton						{ background-color: #9b6d5f;}
+
+.sud .wrappedimage, 
+div.sud h2,
+.sud .fragment, .sud #updatemsg,
+.sud .history .fragment,
+.sud .familyBorderColor					{ border-color: #9b6d5f; }
+
+.sud .infobutton a:link, 
+.sud .infobutton a:visited				{border-color: #f2eae0;}
+.sud .infobutton a:hover				{ border-color: #9b6d5f;  color: #9b6d5f; }
+
+.sud .tips h2.general					{ background-image: url("../../picture/6/44.gif"); }
+.sud .tips h2.paper						{ background-image: url("../../picture/6/81.gif"); }
+.sud .tips h2.computer					{ background-image: url("../../picture/6/123.gif"); }
+
+.sud #tutorialIcon						{ background-image: url("../../picture/5/165.gif"); }
+.sud #rulesIcon							{ background-image: url("../../picture/5/101.gif"); }
+.sud #tipsIcon							{ background-image: url("../../picture/5/4.gif"); } 
+.sud #interactiveIcon					{ background-image: url("../../picture/5/1174.gif"); }
+.sud #techniquesIcon					{ background-image: url("../../picture/5/1173.gif"); } 
+.sud #historyIcon						{ background-image: url("../../picture/5/105.gif"); }
+.sud #samplesIcon						{ background-image: url("../../picture/5/2547.gif"); }
+/*C4 icons */
+.sud .lastNextUpdate span				{ background-image: url("../../picture/20/195.gif"); }
+.sud .credits a							{ background-image: url("../../picture/30/164.gif"); }
+.sud .discount a						{ background-image: url("../../picture/31/164.gif"); }
+/*End C4 icons */
+
+.sud ul.circle li						{ background-image: url("../../picture/7/41.gif"); }
+.sud ul.triangle li,
+.sud ul.trianglelink li a,
+.sud .paging .next a					{ background-image: url("../../picture/8/49.gif"); }
+.sud .paging .prev a					{ background-image: url("../../picture/33/49.gif"); }
+.sud .playnewpuzzles					{ background-image: url("../../picture/34/164.gif"); }
+.sud .select							{ background-image: url("../../picture/36/164.gif"); }
+.sud .puzzleinfoleftbar				    { background-image: url("../../picture/39/164.jpg");}
+/*	--	
+	--	Kakuro */
+
+.kak .sidebar, .kak .history div.sidestory, 
+.kak .dctitle, 
+.blocklink li.kak, 
+.blocklink ul.kak li					{ background-color: #fddd93; }
+
+.kak .block, .kak .content, .kakbody,
+.channel .kak							{ background-color: #feeec9; }
+.kak li.obscured						{ color: #feeec9; }
+
+.kak a:visited, .footer li.kak a, .kak a:link, 
+.kak .paging .prev a:visited, .kak .paging .next a:visited,
+.kak h1, .kak h2, .kak h3, .kak h4, .kak h5,
+.kak dt, .kak .brand, .kak .color,
+.kak a.abslink:link .arrow,
+.kak .db_table th, 
+.kak .myfam a:hover, .kak #updatemsg,
+.kak div.topop a:visited				{ color: #ee863f; }
+.kak .familybutton						{ background-color: #ee863f;}
+
+.kak .wrappedimage, 
+div.kak h2, 
+.kak .fragment, .kak #updatemsg,
+.kak .history .fragment,
+.kak .familyBorderColor					{ border-color: #ee863f; }
+
+.kak .infobutton a:link, 
+.kak .infobutton a:visited				{border-color: #feeec9;}
+.kak .infobutton a:hover				{ border-color: #ee863f;  color: #ee863f; }
+
+.kak .tips h2.general					{ background-image: url("../../picture/6/121.gif"); }
+.kak .tips h2.paper						{ background-image: url("../../picture/6/163.gif"); }
+.kak .tips h2.computer					{ background-image: url("../../picture/6/43.gif"); }
+
+.kak #tutorialIcon						{ background-image: url("../../picture/5/80.gif"); }
+.kak #rulesIcon							{ background-image: url("../../picture/5/128.gif"); }
+.kak #tipsIcon							{ background-image: url("../../picture/5/104.gif"); } 
+.kak #interactiveIcon					{ background-image: url("../../picture/5/1175.gif"); }
+.kak #techniquesIcon					{ background-image: url("../../picture/5/1176.gif"); } 
+.kak #historyIcon						{ background-image: url("../../picture/5/74.gif"); }
+.kak #samplesIcon						{ background-image: url("../../picture/5/2548.gif"); }
+/*C4 icons */
+.kak .lastNextUpdate span				{ background-image: url("../../picture/20/196.gif"); }
+.kak .credits a							{ background-image: url("../../picture/30/27.gif"); }
+.kak .discount a						{ background-image: url("../../picture/31/27.gif"); }
+/*End C4 icons */
+
+.kak ul.circle li						{ background-image: url("../../picture/7/61.gif"); }
+.kak ul.triangle li,
+.kak ul.trianglelink li a,
+.kak .paging .next a					{ background-image: url("../../picture/8/25.gif"); }
+.kak .paging .prev a					{ background-image: url("../../picture/33/25.gif"); }
+.kak .playnewpuzzles					{ background-image: url("../../picture/34/27.gif"); }
+.kak .select							{ background-image: url("../../picture/36/27.gif"); }
+.kak .puzzleinfoleftbar				    { background-image: url("../../picture/39/27.jpg");}
+/*	--	
+	--	Hitori */
+
+.hit .sidebar, .hit .history div.sidestory, 
+.hit .dctitle, 
+.blocklink li.hit, 
+.blocklink ul.hit li					{ background-color: #bad9d1; }
+
+.hit .block, .hit .content, .hitbody,
+.channel .hit							{ background-color: #e8f3f0; }
+.hit li.obscured						{ color: #e8f3f0; }
+
+.hit a:visited, .footer li.hit a, .hit a:link, 
+.hit .paging .prev a:visited, .hit .paging .next a:visited,
+.hit h1, .hit h2, .hit h3, .hit h4, .hit h5,
+.hit dt, .hit .brand, .hit .color,
+.hit a.abslink:link .arrow,
+.hit .db_table th, 
+.hit .myfam a:hover, .hit #updatemsg,
+.hit div.topop a:visited				{ color: #387674; }
+.hit .familybutton						{ background-color: #387674;}
+
+.hit .wrappedimage, 
+div.hit h2, 
+.hit .fragment, .hit #updatemsg,
+.hit .history .fragment,
+.hit .familyBorderColor					{ border-color: #387674; }
+
+.hit .infobutton a:link, 
+.hit .infobutton a:visited				{border-color: #e8f3f0;}
+.hit .infobutton a:hover				{ border-color: #387674;  color: #387674; }
+
+.hit .tips h2.general					{ background-image: url("../../picture/6/11.gif"); }
+.hit .tips h2.paper						{ background-image: url("../../picture/6/142.gif"); }
+.hit .tips h2.computer					{ background-image: url("../../picture/6/114.gif"); }
+
+.hit #tutorialIcon						{ background-image: url("../../picture/5/154.gif"); }
+.hit #rulesIcon							{ background-image: url("../../picture/5/144.gif"); }
+.hit #tipsIcon							{ background-image: url("../../picture/5/71.gif"); } 
+.hit #interactiveIcon					{ background-image: url("../../picture/5/1179.gif"); }
+.hit #techniquesIcon					{ background-image: url("../../picture/5/1180.gif"); } 
+.hit #historyIcon						{ background-image: url("../../picture/5/59.gif"); }
+.hit #samplesIcon						{ background-image: url("../../picture/5/2550.gif"); }
+/*C4 icons */
+.hit .lastNextUpdate span				{ background-image: url("../../picture/20/198.gif"); }
+.hit .credits a							{ background-image: url("../../picture/30/73.gif"); }
+.hit .discount a						{ background-image: url("../../picture/31/73.gif"); }
+/*End C4 icons */
+
+.hit ul.circle li						{ background-image: url("../../picture/7/64.gif"); }
+.hit ul.triangle li,
+.hit ul.trianglelink li a,
+.hit .paging .next a					{ background-image: url("../../picture/8/124.gif"); }
+.hit .paging .prev a					{ background-image: url("../../picture/33/124.gif"); }
+.hit .playnewpuzzles					{ background-image: url("../../picture/34/73.gif"); }
+.hit .select							{ background-image: url("../../picture/36/73.gif"); }
+.hit .puzzleinfoleftbar				    { background-image: url("../../picture/39/73.jpg");}
+/*	--	
+	--	Battleships */
+	
+.bat .sidebar, .bat .history div.sidestory, 
+.bat .dctitle, 
+.blocklink li.bat, 
+.blocklink ul.bat li					{ background-color: #b0daf2; }
+
+.bat .block, .bat .content, .batbody,
+.channel .bat							{ background-color: #e5f3fb; }
+.bat li.obscured						{ color: #e5f3fb; }
+
+.bat a:visited, .footer li.bat a, .bat a:link, 
+.bat .paging .prev a:visited, .bat .paging .next a:visited,
+.bat h1, .bat h2, .bat h3, .bat h4, .bat h5,
+.bat dt, .bat .brand, .bat .color,
+.bat a.abslink:link .arrow,
+.bat .db_table th, 
+.bat .myfam a:hover, .bat #updatemsg,
+.bat div.topop a:visited				{ color: #07679c; }
+.bat .familybutton						{ background-color: #07679c;}
+
+.bat .wrappedimage, 
+div.bat h2, 
+.bat .fragment, .bat #updatemsg,
+.bat .history .fragment,
+.bat .familyBorderColor					{ border-color: #07679c; }
+
+.bat .infobutton a:link, 
+.bat .infobutton a:visited				{border-color: #e5f3fb;}
+.bat .infobutton a:hover				{ border-color: #07679c;  color: #07679c; }
+
+.bat .tips h2.general					{ background-image: url("../../picture/6/99.gif"); }
+.bat .tips h2.paper						{ background-image: url("../../picture/6/48.gif"); }
+.bat .tips h2.computer					{ background-image: url("../../picture/6/113.gif"); }
+
+.bat #tutorialIcon						{ background-image: url("../../picture/5/115.gif"); }
+.bat #rulesIcon							{ background-image: url("../../picture/5/145.gif"); }
+.bat #tipsIcon							{ background-image: url("../../picture/5/156.gif"); } 
+.bat #interactiveIcon					{ background-image: url("../../picture/5/1177.gif"); }
+.bat #techniquesIcon					{ background-image: url("../../picture/5/1178.gif"); } 
+.bat #historyIcon						{ background-image: url("../../picture/5/33.gif"); }
+.bat #samplesIcon						{ background-image: url("../../picture/5/2549.gif"); }
+/*C4 icons */
+.bat .lastNextUpdate span				{ background-image: url("../../picture/20/197.gif"); }
+.bat .credits a							{ background-image: url("../../picture/30/146.gif"); }
+.bat .discount a						{ background-image: url("../../picture/31/146.gif"); }
+/*End C4 icons */
+
+.bat ul.circle li						{ background-image: url("../../picture/7/23.gif"); }
+.bat ul.triangle li,
+.bat ul.trianglelink li a,
+.bat .paging .next a					{ background-image: url("../../picture/8/66.gif"); }
+.bat .paging .prev a					{ background-image: url("../../picture/33/66.gif"); }
+.bat .playnewpuzzles					{ background-image: url("../../picture/34/146.gif"); }
+.bat .select							{ background-image: url("../../picture/36/146.gif"); }
+.bat .puzzleinfoleftbar				    { background-image: url("../../picture/39/146.jpg");}
+/*	--	
+	--	Slitherlink */
+
+.sli .sidebar, .sli .history div.sidestory, 
+.sli .dctitle, 
+.blocklink li.sli, 
+.blocklink ul.sli li					{ background-color: #dbbec4; }
+
+.sli .block, .sli .content, .slibody,
+.channel .sli							{ background-color: #f2e7ea; }
+.sli li.obscured						{ color: #f2e7ea; }
+
+.sli a:visited, .footer li.sli a, .sli a:link, 
+.sli .paging .prev a:visited, .sli .paging .next a:visited,
+.sli h1, .sli h2, .sli h3, .sli h4, .sli h5,
+.sli dt, .sli .brand, .sli .color,
+.sli a.abslink:link .arrow,
+.sli .db_table th, 
+.sli .myfam a:hover, .sli #updatemsg,
+.sli div.topop a:visited				{ color: #984457; }
+.sli .familybutton						{ background-color: #984457;}
+
+.sli .wrappedimage, 
+div.sli h2, 
+.sli .fragment, .sli #updatemsg,
+.sli .history .fragment,
+.sli .familyBorderColor					{ border-color: #984457; }
+
+.sli .infobutton a:link, 
+.sli .infobutton a:visited				{border-color: #f2e7ea;}
+.sli .infobutton a:hover				{ border-color: #984457;  color: #984457; }
+
+.sli .tips h2.general					{ background-image: url("../../picture/6/283.gif"); }
+.sli .tips h2.paper						{ background-image: url("../../picture/6/284.gif"); }
+.sli .tips h2.computer					{ background-image: url("../../picture/6/285.gif"); }
+
+.sli #tutorialIcon						{ background-image: url("../../picture/5/279.gif"); }
+.sli #rulesIcon							{ background-image: url("../../picture/5/280.gif"); }
+.sli #tipsIcon							{ background-image: url("../../picture/5/282.gif"); } 
+.sli #interactiveIcon					{ background-image: url("../../picture/5/1182.gif"); }
+.sli #techniquesIcon					{ background-image: url("../../picture/5/1181.gif"); } 
+.sli #historyIcon						{ background-image: url("../../picture/5/281.gif"); }
+.sli #samplesIcon						{ background-image: url("../../picture/5/2551.gif"); }
+/*C4 icons */
+.sli .lastNextUpdate span				{ background-image: url("../../picture/20/288.gif"); }
+.sli .credits a							{ background-image: url("../../picture/30/278.gif"); }
+.sli .discount a						{ background-image: url("../../picture/31/278.gif"); }
+/*End C4 icons */
+
+.sli ul.circle li						{ background-image: url("../../picture/7/286.gif"); }
+.sli ul.triangle li,
+.sli ul.trianglelink li a,
+.sli .paging .next a					{ background-image: url("../../picture/8/287.gif");}
+.sli .paging .prev a					{ background-image: url("../../picture/33/287.gif");}
+.sli .playnewpuzzles					{ background-image: url("../../picture/34/278.gif");}
+.sli .select							{ background-image: url("../../picture/36/278.gif");}
+.sli .puzzleinfoleftbar				    { background-image: url("../../picture/39/278.jpg");}
+/*	--	
+	--	Hashi */
+
+.has .sidebar, .has .history div.sidestory, 
+.has .dctitle, 
+.blocklink li.has, 
+.blocklink ul.has li					{ background-color: #d1d88c; }
+
+.has .block, .has .content, .hasbody,
+.channel .has							{ background-color: #e5e9c0; }
+.has li.obscured						{ color: #e5e9c0; }
+
+.has a:visited, .footer li.has a, .has a:link, 
+.has .paging .prev a:visited, .has .paging .next a:visited,
+.has h1, .has h2, .has h3, .has h4, .has h5,
+.has dt, .has .brand, .has .color,
+.has a.abslink:link .arrow,
+.has .db_table th, 
+.has .myfam a:hover, .has #updatemsg,
+.has div.topop a:visited				{ color: #778d27; }
+.has .familybutton						{ background-color: #778d27;}
+
+.has .wrappedimage, 
+div.has h2, 
+.has .fragment, .has #updatemsg,
+.has .history .fragment,
+.has .familyBorderColor					{ border-color: #778d27; }
+
+.has .infobutton a:link, 
+.has .infobutton a:visited				{border-color: #e5e9c0;}
+.has .infobutton a:hover				{ border-color: #778d27;  color: #778d27; }
+
+.has .tips h2.general					{ background-image: url("../../picture/6/1008.gif"); }
+.has .tips h2.paper						{ background-image: url("../../picture/6/1009.gif"); }
+.has .tips h2.computer					{ background-image: url("../../picture/6/1010.gif"); }
+
+.has #tutorialIcon						{ background-image: url("../../picture/5/1004.gif"); }
+.has #rulesIcon							{ background-image: url("../../picture/5/1005.gif"); }
+.has #tipsIcon							{ background-image: url("../../picture/5/1006.gif"); } 
+.has #interactiveIcon					{ background-image: url("../../picture/5/1184.gif"); }
+.has #techniquesIcon					{ background-image: url("../../picture/5/1183.gif"); } 
+.has #historyIcon						{ background-image: url("../../picture/5/1007.gif"); }
+.has #samplesIcon						{ background-image: url("../../picture/5/2552.gif"); }
+/*C4 icons */
+.has .lastNextUpdate span				{ background-image: url("../../picture/20/1014.gif"); }
+.has .credits a							{ background-image: url("../../picture/30/1003.gif"); }
+.has .discount a						{ background-image: url("../../picture/31/1003.gif"); }
+/*End C4 icons */
+
+.has ul.circle li						{ background-image: url("../../picture/7/1011.gif"); }
+.has ul.triangle li,
+.has ul.trianglelink li a,
+.has .paging .next a					{ background-image: url("../../picture/8/1012.gif"); }
+.has .paging .prev a					{ background-image: url("../../picture/33/1012.gif"); }
+.has .playnewpuzzles					{ background-image: url("../../picture/34/1003.gif"); }
+.has .select							{ background-image: url("../../picture/36/1003.gif"); }
+.has .puzzleinfoleftbar				    { background-image: url("../../picture/39/1003.jpg");}
+/*	--	
+	--	CalcuDoku */
+
+.cal .sidebar, .cal .history div.sidestory, 
+.cal .dctitle, 
+.blocklink li.cal, 
+.blocklink ul.cal li					{ background-color: #d0d8da; }
+
+.cal .block, .cal .content, .calbody,
+.channel .cal							{ background-color: #edf0f1; }
+.cal li.obscured						{ color: #edf0f1; }
+
+.cal a:visited, .footer li.cal a, .cal a:link, 
+.cal .paging .prev a:visited, .cal .paging .next a:visited,
+.cal h1, .cal h2, .cal h3, .cal h4, .cal h5,
+.cal dt, .cal .brand, .cal .color,
+.cal a.abslink:link .arrow,
+.cal .db_table th, 
+.cal .myfam a:hover, .cal #updatemsg,
+.cal div.topop a:visited				{ color: #555c78; }
+.cal .familybutton						{ background-color: #555c78;}
+
+.cal .wrappedimage, 
+div.cal h2, 
+.cal .fragment, .cal #updatemsg,
+.cal .history .fragment,
+.cal .familyBorderColor					{ border-color: #555c78; }
+
+.cal .infobutton a:link, 
+.cal .infobutton a:visited				{border-color: #edf0f1;}
+.cal .infobutton a:hover				{ border-color: #555c78;  color: #555c78; }
+
+.cal .tips h2.general					{ background-image: url("../../picture/6/1645.gif"); }
+.cal .tips h2.paper						{ background-image: url("../../picture/6/1644.gif"); }
+.cal .tips h2.computer					{ background-image: url("../../picture/6/1643.gif"); }
+
+.cal #tutorialIcon						{ background-image: url("../../picture/5/1640.gif"); }
+.cal #rulesIcon							{ background-image: url("../../picture/5/1639.gif"); }
+.cal #tipsIcon							{ background-image: url("../../picture/5/1641.gif"); } 
+.cal #interactiveIcon					{ background-image: url("../../picture/5/1638.gif"); }
+.cal #techniquesIcon					{ background-image: url("../../picture/5/1637.gif"); } 
+.cal #historyIcon						{ background-image: url("../../picture/5/1642.gif"); }
+.cal #samplesIcon						{ background-image: url("../../picture/5/2553.gif"); }
+/*C4 icons */
+.cal .lastNextUpdate span				{ background-image: url("../../picture/20/1649.gif"); }
+.cal .credits a							{ background-image: url("../../picture/30/1635.gif"); }
+.cal .discount a						{ background-image: url("../../picture/31/1635.gif"); }
+/*End C4 icons */
+
+.cal ul.circle li						{ background-image: url("../../picture/7/1646.gif"); }
+.cal ul.triangle li,
+.cal ul.trianglelink li a,
+.cal .paging .next a					{ background-image: url("../../picture/8/1647.gif"); }
+.cal .paging .prev a					{ background-image: url("../../picture/33/1647.gif"); }
+.cal .playnewpuzzles					{ background-image: url("../../picture/34/1635.gif"); }
+.cal .select							{ background-image: url("../../picture/36/1635.gif"); }
+.cal .puzzleinfoleftbar				    { background-image: url("../../picture/39/1635.jpg");}
+/*	--	
+	--	Sym-a-Pix */
+
+.sap .sidebar, .sap .history div.sidestory, 
+.sap .dctitle, 
+.blocklink li.sap, 
+.blocklink ul.sap li					{ background-color: #F1E3AC; }
+
+.sap .block, .sap .content, .sapbody,
+.channel .sap							{ background-color: #F8F1D6; }
+.sap li.obscured						{ color: #F8F1D6; }
+
+.sap a:visited, .footer li.sap a, .sap a:link, 
+.sap .paging .prev a:visited, .sap .paging .next a:visited,
+.sap h1, .sap h2, .sap h3, .sap h4, .sap h5,
+.sap dt, .sap .brand, .sap .color,
+.sap a.abslink:link .arrow,
+.sap .db_table th, 
+.sap .myfam a:hover, .sap #updatemsg,
+.sap div.topop a:visited				{ color: #B38200; }
+.sap .familybutton						{ background-color: #B38200;}
+
+.sap .wrappedimage, 
+div.sap h2, 
+.sap .fragment, .sap #updatemsg,
+.sap .history .fragment,
+.sap .familyBorderColor					{ border-color: #B38200; }
+
+.sap .infobutton a:link, 
+.sap .infobutton a:visited				{border-color: #F8F1D6;}
+.sap .infobutton a:hover				{ border-color: #B38200;  color: #B38200; }
+
+.sap .tips h2.general					{ background-image: url("../../picture/6/2175.gif"); }
+.sap .tips h2.paper						{ background-image: url("../../picture/6/2174.gif"); }
+.sap .tips h2.computer					{ background-image: url("../../picture/6/2173.gif"); }
+
+.sap #tutorialIcon						{ background-image: url("../../picture/5/2170.gif"); }
+.sap #rulesIcon							{ background-image: url("../../picture/5/2169.gif"); }
+.sap #tipsIcon							{ background-image: url("../../picture/5/2171.gif"); } 
+.sap #interactiveIcon					{ background-image: url("../../picture/5/2168.gif"); }
+.sap #techniquesIcon					{ background-image: url("../../picture/5/2167.gif"); } 
+.sap #historyIcon						{ background-image: url("../../picture/5/2172.gif"); }
+.sap #samplesIcon						{ background-image: url("../../picture/5/2542.gif"); }
+/*C4 icons */
+.sap .lastNextUpdate span				{ background-image: url("../../picture/20/2179.gif"); }
+.sap .credits a							{ background-image: url("../../picture/30/2165.gif"); }
+.sap .discount a						{ background-image: url("../../picture/31/2165.gif"); }
+/*End C4 icons */
+
+.sap ul.circle li						{ background-image: url("../../picture/7/2176.gif"); }
+.sap ul.triangle li,
+.sap ul.trianglelink li a,
+.sap .paging .next a					{ background-image: url("../../picture/8/2177.gif"); }
+.sap .paging .prev a					{ background-image: url("../../picture/33/2180.gif"); }
+.sap .playnewpuzzles					{ background-image: url("../../picture/34/2165.gif"); }
+.sap .select							{ background-image: url("../../picture/36/2165.gif"); }
+.sap .puzzleinfoleftbar				    { background-image: url("../../picture/39/2165.jpg");}
+
+/* --
+	-- Nurikabe
+*/
+.nur .sidebar, .nur .history div.sidestory, 
+.nur .dctitle, 
+.blocklink li.nur, 
+.blocklink ul.nur li			        { background-color: #fbc4a6; }
+.nur .block, .nur .content, .nurbody, 
+.channel .nur							{ background-color: #fce4d4; }
+.nur li.obscured						{ color: #fce4d4; }
+
+.nur a:visited, .footer li.nur a, .nur a:link, 
+.nur .paging .prev a:visited, 
+.nur .paging .next a:visited,
+.nur h1, .nur h2, .nur h3, .nur h4, .nur h5,
+.nur dt, .nur .brand, .nur .color, 
+.nur a.abslink:link .arrow, .nur .db_table th, 
+.nur .myfam a:hover, .nur #updatemsg,
+.nur div.topop a:visited				{ color: #c15f33; }
+.nur .familybutton						{ background-color: #c15f33;}
+
+.nur .wrappedimage, 
+div.nur h2, 
+.nur .fragment, .nur #updatemsg,
+.nur .history .fragment,
+.nur .familyBorderColor					{ border-color: #c15f33; }
+
+.nur .infobutton a:link, 
+.nur .infobutton a:visited				{border-color: #fce4d4;}
+.nur .infobutton a:hover				{ border-color: #c15f33;  color: #c15f33; }
+
+.nur .tips h2.general					{ background-image: url("../../picture/6/2593.gif"); }
+.nur .tips h2.paper						{ background-image: url("../../picture/6/2594.gif"); }
+.nur .tips h2.computer					{ background-image: url("../../picture/6/2595.gif"); }
+
+.nur #tutorialIcon						{ background-image: url("../../picture/5/2588.gif"); }
+.nur #rulesIcon							{ background-image: url("../../picture/5/2587.gif"); }
+.nur #tipsIcon							{ background-image: url("../../picture/5/2591.gif"); } 
+.nur #interactiveIcon					{ background-image: url("../../picture/5/2590.gif"); }
+.nur #techniquesIcon					{ background-image: url("../../picture/5/2589.gif"); } 
+.nur #historyIcon						{ background-image: url("../../picture/5/2592.gif"); }
+.nur #samplesIcon						{ background-image: url("../../picture/5/2586.gif"); }
+/*C4 icons */
+.nur .lastNextUpdate span				{ background-image: url("../../picture/20/2599.gif"); }
+.nur .credits a							{ background-image: url("../../picture/30/2582.gif"); }
+.nur .discount a						{ background-image: url("../../picture/31/2582.gif"); }
+/*End C4 icons */
+.nur ul.circle li						{ background-image: url("../../picture/7/2596.gif"); }
+.nur ul.triangle li,
+.nur ul.trianglelink li a,
+.nur .paging .next a					{ background-image: url("../../picture/8/2597.gif"); }
+.nur .paging .prev a					{ background-image: url("../../picture/33/2600.gif"); }
+.nur .playnewpuzzles					{ background-image: url("../../picture/34/2582.gif"); }
+.nur .select							{ background-image: url("../../picture/36/2582.gif"); }
+.nur .puzzleinfoleftbar				    { background-image: url("../../picture/39/2582.jpg");}
+
+/* --
+	-- Skyscrapers
+*/
+.sky .sidebar, .sky .history div.sidestory, 
+.sky .dctitle, 
+.blocklink li.sky, 
+.blocklink ul.sky li					    { background-color: #D4CFC8; }
+.sky .block, .sky .content, .nurbody, 
+.channel .sky								{ background-color: #EDEBE8; }
+.sky li.obscured							{ color: #EDEBE8; }
+
+.sky a:visited, .footer li.sky a, .sky a:link, 
+.sky .paging .prev a:visited, 
+.sky .paging .next a:visited,
+.sky h1, .sky h2, .sky h3, .sky h4, .sky h5,
+.sky dt, .sky .brand, .sky .color, 
+.sky a.abslink:link .arrow, .sky .db_table th, 
+.sky .myfam a:hover, .sky #updatemsg,
+.sky div.topop a:visited			    { color: #645D55; }
+.sky .familybutton						{ background-color: #645D55;}
+
+.sky .wrappedimage, 
+div.sky h2, 
+.sky .fragment, .sky #updatemsg,
+.sky .history .fragment,
+.sky .familyBorderColor				    { border-color: #645D55; }
+
+.sky .infobutton a:link, 
+.sky .infobutton a:visited		        {border-color: #EDEBE8;}
+.sky .infobutton a:hover			    { border-color: #645D55;  color: #645D55; }
+
+.sky .tips h2.general					{ background-image: url("../../picture/6/3655.gif"); }
+.sky .tips h2.paper						{ background-image: url("../../picture/6/3656.gif"); }
+.sky .tips h2.computer				    { background-image: url("../../picture/6/3657.gif"); }
+
+.sky #tutorialIcon						{ background-image: url("../../picture/5/3650.gif"); }
+.sky #rulesIcon							{ background-image: url("../../picture/5/3649.gif"); }
+.sky #tipsIcon							{ background-image: url("../../picture/5/3653.gif"); } 
+.sky #interactiveIcon					{ background-image: url("../../picture/5/3652.gif"); }
+.sky #techniquesIcon					{ background-image: url("../../picture/5/3651.gif"); } 
+.sky #historyIcon						{ background-image: url("../../picture/5/3654.gif"); }
+.sky #samplesIcon						{ background-image: url("../../picture/5/3648.gif"); }
+/*C4 icons */
+.sky .lastNextUpdate span   			{ background-image: url("../../picture/20/3647.gif"); }
+.sky .credits a							{ background-image: url("../../picture/30/3647.gif"); }
+.sky .discount a						{ background-image: url("../../picture/31/3647.gif"); }
+/*End C4 icons */
+.sky ul.circle li						{ background-image: url("../../picture/7/3647.gif"); }
+.sky ul.triangle li,
+.sky ul.trianglelink li a,
+.sky .paging .next a					{ background-image: url("../../picture/8/3647.gif"); }
+.sky .paging .prev a					{ background-image: url("../../picture/33/3647.gif"); }
+.sky .playnewpuzzles					{ background-image: url("../../picture/34/3647.gif"); }
+.sky .select							{ background-image: url("../../picture/36/3647.gif"); }
+.sky .puzzleinfoleftbar				    { background-image: url("../../picture/39/3647.jpg"); }
+
+/*	--	
+	--	Tic-Tac-Logic */
+
+.ttl .sidebar, .ttl .history div.sidestory, 
+.ttl .dctitle, 
+.blocklink li.ttl, 
+.blocklink ul.ttl li			        { background-color: #ded5ed; }
+.ttl .block, .ttl .content, .ttlbody, 
+.channel .ttl							{ background-color: #f1edf8; }
+.ttl li.obscured						{ color: #f1edf8; }
+
+.ttl a:visited, .footer li.ttl a, .ttl a:link, 
+.ttl .paging .prev a:visited, .ttl .paging .next a:visited,
+.ttl h1, .ttl h2, .ttl h3, .ttl h4, .ttl h5,
+.ttl dt, .ttl .brand, .ttl .color, 
+.ttl a.abslink:link .arrow, .ttl .db_table th, 
+.ttl .myfam a:hover, .ttl #updatemsg,
+.ttl div.topop a:visited				{ color: #6f3a72; }
+.ttl .familybutton						{ background-color: #6f3a72;}
+
+.ttl .wrappedimage, 
+div.ttl h2, 
+.ttl .fragment, .ttl #updatemsg,
+.ttl .history .fragment,
+.ttl .familyBorderColor					{ border-color: #6f3a72; }
+
+.ttl .infobutton a:link, 
+.ttl .infobutton a:visited				{border-color: #f1edf8;}
+.ttl .infobutton a:hover				{ border-color: #6f3a72;  color: #6f3a72; }
+
+.ttl .tips h2.general					{ background-image: url("../../picture/6/3938.gif"); }
+.ttl .tips h2.paper						{ background-image: url("../../picture/6/3939.gif"); }
+.ttl .tips h2.computer					{ background-image: url("../../picture/6/3940.gif"); }
+
+.ttl #rulesIcon							{ background-image: url("../../picture/5/3932.gif"); }
+.ttl #tutorialIcon						{ background-image: url("../../picture/5/3933.gif"); }
+.ttl #interactiveIcon					{ background-image: url("../../picture/5/3935.gif"); }
+.ttl #techniquesIcon					{ background-image: url("../../picture/5/3934.gif"); } 
+.ttl #tipsIcon							{ background-image: url("../../picture/5/3936.gif"); } 
+.ttl #historyIcon						{ background-image: url("../../picture/5/3937.gif"); }
+.ttl #samplesIcon						{ background-image: url("../../picture/5/3931.gif"); }
+/*C4 icons */
+.ttl .lastNextUpdate span				{ background-image: url("../../picture/20/3927.gif"); }
+.ttl .credits a							{ background-image: url("../../picture/30/3927.gif"); }
+.ttl .discount a						{ background-image: url("../../picture/31/3927.gif"); }
+
+/*End C4 icons */
+
+.ttl ul.circle li						{ background-image: url("../../picture/7/3927.gif"); }
+.ttl ul.triangle li,
+.ttl ul.trianglelink li a,
+.ttl .paging .next a					{ background-image: url("../../picture/8/3927.gif"); }
+.ttl .paging .prev a					{ background-image: url("../../picture/33/3927.gif"); }
+.ttl .playnewpuzzles					{ background-image: url("../../picture/34/3927.gif"); }
+.ttl .select							{ background-image: url("../../picture/36/3927.gif"); }
+.ttl .puzzleinfoleftbar				    { background-image: url("../../picture/39/3927.jpg");}
+
+/*	--	
+--	Cross-a-Pix */
+
+.cap .sidebar, .cap .history div.sidestory, 
+.cap .dctitle, 
+.blocklink li.cap, 
+.blocklink ul.cap li			        { background-color: #EFDAE6; }
+.cap .block, .cap .content, .capbody, 
+.channel .cap							{ background-color: #F9F1F6; }
+.cap li.obscured						{ color: #F9F1F6; }
+
+.cap a:visited, .footer li.cap a, .cap a:link, 
+.cap .paging .prev a:visited, .cap .paging .next a:visited,
+.cap h1, .cap h2, .cap h3, .cap h4, .cap h5,
+.cap dt, .cap .brand, .cap .color, 
+.cap a.abslink:link .arrow, .cap .db_table th, 
+.cap .myfam a:hover, .cap #updatemsg,
+.cap div.topop a:visited				{ color: #AF5689; }
+.cap .familybutton						{ background-color: #AF5689;}
+
+.cap .wrappedimage, 
+div.cap h2, 
+.cap .fragment, .cap #updatemsg,
+.cap .history .fragment,
+.cap .familyBorderColor					{ border-color: #AF5689; }
+
+.cap .infobutton a:link, 
+.cap .infobutton a:visited				{border-color: #F9F1F6;}
+.cap .infobutton a:hover				{ border-color: #AF5689;  color: #AF5689; }
+
+.cap .tips h2.general					{ background-image: url("../../picture/6/4618.gif"); }
+.cap .tips h2.paper						{ background-image: url("../../picture/6/4619.gif"); }
+.cap .tips h2.computer					{ background-image: url("../../picture/6/4620.gif"); }
+
+.cap #rulesIcon							{ background-image: url("../../picture/5/4612.gif"); }
+.cap #tutorialIcon						{ background-image: url("../../picture/5/4613.gif"); }
+.cap #interactiveIcon					{ background-image: url("../../picture/5/4615.gif"); }
+.cap #techniquesIcon					{ background-image: url("../../picture/5/4614.gif"); } 
+.cap #tipsIcon							{ background-image: url("../../picture/5/4616.gif"); } 
+.cap #historyIcon						{ background-image: url("../../picture/5/4617.gif"); }
+.cap #samplesIcon						{ background-image: url("../../picture/5/4611.gif"); }
+/*C4 icons */
+.cap .lastNextUpdate span				{ background-image: url("../../picture/20/4624.gif"); }
+.cap .credits a							{ background-image: url("../../picture/30/4609.gif"); }
+.cap .discount a						{ background-image: url("../../picture/31/4609.gif"); }
+
+/*End C4 icons */
+
+.cap ul.circle li						{ background-image: url("../../picture/7/4621.gif"); }
+.cap ul.triangle li,
+.cap ul.trianglelink li a,
+.cap .paging .next a					{ background-image: url("../../picture/8/4622.gif"); }
+.cap .paging .prev a					{ background-image: url("../../picture/33/4622.gif"); }
+.cap .playnewpuzzles					{ background-image: url("../../picture/34/4609.gif"); }
+.cap .select							{ background-image: url("../../picture/36/4609.gif"); }
+.cap .puzzleinfoleftbar				    { background-image: url("../../picture/39/4609.jpg");}
+
+/*	--	
+	--	Block-a-Pix */
+
+.bap .sidebar, .bap .history div.sidestory, 
+.bap .dctitle, 
+.blocklink li.bap, 
+.blocklink ul.bap li			        { background-color: #CCE4D0; }
+.bap .block, .bap .content, .bapbody, 
+.channel .bap							{ background-color: #E5F1E7; }
+.bap li.obscured						{ color: #E5F1E7; }
+
+.bap a:visited, .footer li.bap a, .bap a:link, 
+.bap .paging .prev a:visited, .bap .paging .next a:visited,
+.bap h1, .bap h2, .bap h3, .bap h4, .bap h5,
+.bap dt, .bap .brand, .bap .color, 
+.bap a.abslink:link .arrow, .bap .db_table th, 
+.bap .myfam a:hover, .bap #updatemsg,
+.bap div.topop a:visited				{ color: #4B7753; }
+.bap .familybutton						{ background-color: #4B7753;}
+
+.bap .wrappedimage, 
+div.bap h2, 
+.bap .fragment, .bap #updatemsg,
+.bap .history .fragment,
+.bap .familyBorderColor					{ border-color: #4B7753; }
+
+.bap .infobutton a:link, 
+.bap .infobutton a:visited				{border-color: #E5F1E7;}
+.bap .infobutton a:hover				{ border-color: #4B7753;  color: #4B7753; }
+
+.bap .tips h2.general					{ background-image: url("../../picture/6/4753.gif"); }
+.bap .tips h2.paper						{ background-image: url("../../picture/6/4754.gif"); }
+.bap .tips h2.computer					{ background-image: url("../../picture/6/4755.gif"); }
+
+.bap #rulesIcon							{ background-image: url("../../picture/5/4747.gif"); }
+.bap #tutorialIcon						{ background-image: url("../../picture/5/4748.gif"); }
+.bap #interactiveIcon					{ background-image: url("../../picture/5/4750.gif"); }
+.bap #techniquesIcon					{ background-image: url("../../picture/5/4749.gif"); } 
+.bap #tipsIcon							{ background-image: url("../../picture/5/4751.gif"); } 
+.bap #historyIcon						{ background-image: url("../../picture/5/4752.gif"); }
+.bap #samplesIcon						{ background-image: url("../../picture/5/4746.gif"); }
+/*C4 icons */
+.bap .lastNextUpdate span				{ background-image: url("../../picture/20/4759.gif"); }
+.bap .credits a							{ background-image: url("../../picture/30/4744.gif"); }
+.bap .discount a						{ background-image: url("../../picture/31/4744.gif"); }
+
+/*End C4 icons */
+
+.bap ul.circle li						{ background-image: url("../../picture/7/4756.gif"); }
+.bap ul.triangle li,
+.bap ul.trianglelink li a,
+.bap .paging .next a					{ background-image: url("../../picture/8/4757.gif"); }
+.bap .paging .prev a					{ background-image: url("../../picture/33/4757.gif"); }
+.bap .playnewpuzzles					{ background-image: url("../../picture/34/4744.gif"); }
+.bap .select							{ background-image: url("../../picture/36/4744.gif"); }
+.bap .puzzleinfoleftbar				    { background-image: url("../../picture/39/4744.jpg");}
+
+
+/* --
+   -- This is the closing block.
+   -- All family definitions come above it. */
+
+.bat a:hover, 
+.bat .sidebar a:hover,
+.bat .mycontop li.active a:hover		{ color: #0590b8; }
+/* -- Sidebar color defnitions for all families */
+.sidebar a:visited,
+a.abslink:visited, 
+a.abslink:visited span.arrow			{ color: #716f6e; }
+
+.content a:hover, 
+.content .paging a:hover,
+.content a:active, 
+.content div.topop a:hover,
+.sidebar a:hover, .sidebar a:active,
+a.abslink:hover, 
+a.abslink:hover span.arrow				{ color: #005893; }
+
+
+ul.blocklink li a:hover,
+.sidebar .familybutton a				{ color: #fff; }
+
+a.abslink:link							{ color: #000000; }
+
+*	{
+	padding: 0px;
+	margin: 0px;
+}
+/* --
+   -- End of the closing block.
+   -- Nothing comes below it. */
