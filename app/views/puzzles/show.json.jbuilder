@@ -1,1 +1,1 @@
-json.extract! @puzzle, :id, :guid, :codeFamily, :codeVariant, :codeModel, :serialNumber, :versionMajor, :versionMinor, :builderVersion, :creationDate, :releaseDate, :properties, :data, :created_at, :updated_at
+json.partial! 'puzzles/puzzle', puzzle: @puzzle

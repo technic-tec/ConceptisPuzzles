@@ -11,6 +11,14 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
     ":id"      : "show"
     ".*"        : "index"
 
+  get_or_fetch: (id)->
+    puzzle = @puzzles.get(id)
+    unless puzzle
+      puzzle = new ConceptisPuzzles.Models.Puzzle({id: id})
+      @puzzles.add(puzzle)
+      puzzle.fetch()
+    puzzle
+
   newPuzzle: ->
     @view = new ConceptisPuzzles.Views.Puzzles.NewView(collection: @puzzles)
     $("#puzzles").html(@view.render().el)
@@ -23,13 +31,13 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
     @puzzles.fetch({data: {page: pg}, reset: true})
 
   show: (id) ->
-    puzzle = @puzzles.get(id)
+    puzzle = @get_or_fetch(id)
 
     @view = new ConceptisPuzzles.Views.Puzzles.ShowView(model: puzzle)
     $("#puzzles").html(@view.render().el)
 
   edit: (id) ->
-    puzzle = @puzzles.get(id)
+    puzzle = @get_or_fetch(id)
 
     @view = new ConceptisPuzzles.Views.Puzzles.EditView(model: puzzle)
     $("#puzzles").html(@view.render().el)

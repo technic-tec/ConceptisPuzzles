@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
   $(function() {
-      window.router = new ConceptisPuzzles.Routers.PuzzlesRouter({puzzles: <%= @puzzles.to_json(:include => [:properties]).html_safe -%>});
+      window.router = new ConceptisPuzzles.Routers.PuzzlesRouter({puzzles: []});
       Backbone.history.start();
   });
 </script>
