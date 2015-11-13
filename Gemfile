@@ -27,6 +27,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails-backbone', github:'codebrew/backbone-rails'
 gem 'tzinfo', platform: [ 'mingw', 'mswin', 'jruby']
 gem 'tzinfo-data', platform: [ 'mingw', 'mswin', 'jruby']
+# Use omniauth for google authentication
+gem 'omniauth'
+gem 'google-api-client'
+gem 'google-api-omniauth'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

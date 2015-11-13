@@ -38,4 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Whitelist *.ngrok.io IPs for development purpose.
+  config.web_console.whitelisted_ips = '138.128.207.23'
 end
