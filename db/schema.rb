@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151103021645) do
+ActiveRecord::Schema.define(version: 20151117064537) do
 
   create_table "properties", force: :cascade do |t|
     t.string   "attr_type"
@@ -40,5 +40,19 @@ ActiveRecord::Schema.define(version: 20151103021645) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "email"
+    t.string   "refresh_token"
+    t.string   "access_token"
+    t.datetime "expires"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "users", ["provider", "uid"], name: "index_users_on_provider_and_uid"
 
 end

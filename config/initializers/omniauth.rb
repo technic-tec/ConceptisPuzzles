@@ -6,6 +6,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     CLIENT_SECRETS.client_id,
     CLIENT_SECRETS.client_secret, {
       :scope => ['profile', 'email'],
+      :approval_prompt => "auto",
       :include_granted_scopes => true
     }
 end

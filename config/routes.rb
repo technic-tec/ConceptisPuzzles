@@ -7,6 +7,11 @@ Rails.application.routes.draw do
       post 'save'
     end
   end
+  get "/auth/:provider/callback" => "sessions#create", defaults: {format: 'json'}
+  get '/auth/failure' => "sessions#fail", defaults: {format: 'json'}
+  get "/login" => "sessions#new", as: :login, defaults: {format: 'json'}
+  get "/logout" => "sessions#destroy", as: :logout, defaults: {format: 'json'}
+  root 'puzzles#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
