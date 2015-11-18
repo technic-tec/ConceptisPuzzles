@@ -31,6 +31,8 @@ gem 'tzinfo-data', platform: [ 'mingw', 'mswin', 'jruby']
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'google-api-client'
+# Use rack-cors for CORS configuration
+gem 'rack-cors', :require => 'rack/cors'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
