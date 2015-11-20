@@ -33,6 +33,8 @@ gem 'omniauth-google-oauth2'
 gem 'google-api-client'
 # Use rack-cors for CORS configuration
 gem 'rack-cors', :require => 'rack/cors'
+# Use rack-proxy for transparent proxy
+gem 'rack-proxy'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
