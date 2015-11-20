@@ -1,28 +1,42 @@
 $(document).ready(
   ->
-    $('.login').show()
-    $('.logout').hide()
-    $('.user-info').hide()
-    $('.login').click(
+    $('.login-btn').click(
       ->
-        $.ajax
-          url: '/login'
-          crossDomain: true
-          dataType: 'application/json'
-          success: (data,  textStatus,  jqXHR) ->
-            console.log(data)
-            $('.user-info').text("Welcome, #{data.name}!")
-            $('.login').hide()
-            $('.user-info').show()
-            $('.logout').show()
-            $('.flash-note').text("Login success!")
-          error: (jqXHR, textStatus, errorThrown ) ->
-            errors = $.parseJSON(jqXHR.responseText).errors
-            console.log(errorThrown)
-            console.log(errors)
-            $('.flash-note').text("Login failed! #{errors}")
+        uri = '/login?uri='+window.location
+        child = window.open(uri)
+        leftDomain = false
+        setIntevel(
+          ->
+            try
+              if (child.document.domain == document.domain)
+                if (leftDomain && child.document.readyState == "complete")
+                  clearInterval(interval)
+                  window.addEventListener("message",
+                    (e)->
+                      console.log(e.data)
+                      data = $.parseJSON(e.data)
+                      child.close()
+                      if data.errors || !data.success || !data.username
+                        error = data.errors || "invalid response"
+                        $('.flash-note').text("Login failed! #{data.errors}")
+                      else
+                        $('.user-info').text("Welcome, #{data.username}!")
+                        $('.login').hide()
+                        $('.logout').show()
+                        $('.flash-note').text("Login success!")
+                  , false)
+                  child.postMessage("{ \"quest\": \"username\" }",  "*")
+              else
+                leftDomain = true
+            catch e
+              if child.closed
+                clearInteval(inteval)
+                alert("closed")
+                return
+              leftDomain = true
+        , 500)
     )
-    $('.logout').click(
+    $('.logout-btn').click(
       ->
         $.ajax
           url: '/logout'
@@ -30,7 +44,6 @@ $(document).ready(
           dataType: 'application/json'
           success: (data,  textStatus,  jqXHR) ->
             console.log(data)
-            $('.user-info').hide()
             $('.logout').hide()
             $('.login').show()
             $('.flash-note').text("Logout success!")
