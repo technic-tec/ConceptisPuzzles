@@ -59,3 +59,7 @@ group :development do
   gem 'rename'
 end
 
+group :production do
+  # Add 'rails_12factor' heroku
+  gem 'rails_12factor'
+end
