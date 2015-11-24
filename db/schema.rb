@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20151117064537) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "properties", force: :cascade do |t|
     t.string   "attr_type"
     t.string   "name"
@@ -23,7 +26,7 @@ ActiveRecord::Schema.define(version: 20151117064537) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "properties", ["puzzle_id"], name: "index_properties_on_puzzle_id"
+  add_index "properties", ["puzzle_id"], name: "index_properties_on_puzzle_id", using: :btree
 
   create_table "puzzles", force: :cascade do |t|
     t.string   "guid"
@@ -53,6 +56,6 @@ ActiveRecord::Schema.define(version: 20151117064537) do
     t.datetime "updated_at",    null: false
   end
 
-  add_index "users", ["provider", "uid"], name: "index_users_on_provider_and_uid"
+  add_index "users", ["provider", "uid"], name: "index_users_on_provider_and_uid", using: :btree
 
 end
