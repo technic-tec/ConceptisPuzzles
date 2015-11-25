@@ -12,6 +12,10 @@ body {
   line-height: 18px;
 }
 
+.puzzle-container .content {
+  overflow-x: scroll;
+}
+
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
