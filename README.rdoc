@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/technic-tec/ConceptisPuzzles.svg?branch=backbone)](https://travis-ci.org/technic-tec/ConceptisPuzzles)
 == README
 
 This README would normally document whatever steps are necessary to get the
