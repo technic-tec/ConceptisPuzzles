@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  type: 
+  attr_type:
   name: MyString
   value: MyString
   unit: MyString
   puzzle_id: 1
 
 two:
-  type: 
+  attr_type:
   name: MyString
   value: MyString
   unit: MyString
