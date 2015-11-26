@@ -5,27 +5,28 @@ $(document).ready(
         uri = '/login?uri='+window.location
         child = window.open(uri)
         leftDomain = false
-        setIntevel(
+        retry = 0
+        interval = setInterval(
           ->
             try
-              if (child.document.domain == document.domain)
-                if (leftDomain && child.document.readyState == "complete")
+              if `child.document.domain == document.domain`
+                retry++
+                if (leftDomain or retry == 5) and `child.document.readyState == "complete"`
                   clearInterval(interval)
                   window.addEventListener("message",
                     (e)->
-                      console.log(e.data)
                       data = $.parseJSON(e.data)
                       child.close()
-                      if data.errors || !data.success || !data.username
+                      if data.errors || !data.name
                         error = data.errors || "invalid response"
                         $('.flash-note').text("Login failed! #{data.errors}")
                       else
-                        $('.user-info').text("Welcome, #{data.username}!")
+                        $('.user-info').text("Welcome, #{data.name}!")
                         $('.login').hide()
                         $('.logout').show()
                         $('.flash-note').text("Login success!")
                   , false)
-                  child.postMessage("{ \"quest\": \"username\" }",  "*")
+                  child.postMessage("info",  "*")
               else
                 leftDomain = true
             catch e
@@ -41,9 +42,8 @@ $(document).ready(
         $.ajax
           url: '/logout'
           crossDomain: true
-          dataType: 'application/json'
+          dataType: 'json'
           success: (data,  textStatus,  jqXHR) ->
-            console.log(data)
             $('.logout').hide()
             $('.login').show()
             $('.flash-note').text("Logout success!")

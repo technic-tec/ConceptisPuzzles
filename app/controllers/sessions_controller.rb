@@ -15,24 +15,17 @@ class SessionsController < ApplicationController
       :email => auth["info"]["email"],
     )
 
-    respond_to { |format|
-      format.json {
-        if user.save
-          session[:user_id] = user.id
-          render :json => user, :only => [:name, :email]
-        else
-          render :json => { :errors => user.errors.full_messages }, :status => 422
-        end
-      }
-    }
+    if user.save
+      session[:user_id] = user.id
+      @login_res = user.to_json(:only => [:name, :email]).html_safe
+    else
+      @login_res = { :errors => user.errors.full_messages }.to_json.html_safe
+    end
   end
 
   def fail
-    respond_to { |format|
-      format.json {
-        render :json => { :errors => params[:message] }, :status => 422
-      }
-    }
+    @login_res = { :errors => params[:message] }.to_json.html_safe
+    render :create
   end
 
   def destroy
