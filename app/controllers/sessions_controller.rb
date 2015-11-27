@@ -16,7 +16,9 @@ class SessionsController < ApplicationController
     )
 
     if user.save
-      session[:user_id] = user.id
+      session[:user_id] = user.uid
+      session[:provider] = user.provider
+      @current_user = user
       @login_res = user.to_json(:only => [:name, :email]).html_safe
     else
       @login_res = { :errors => user.errors.full_messages }.to_json.html_safe
@@ -39,6 +41,7 @@ class SessionsController < ApplicationController
       }
     }
     reset_session
+    @current_user = nil
   end
 
 end

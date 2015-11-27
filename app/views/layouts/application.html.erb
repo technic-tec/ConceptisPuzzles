@@ -12,9 +12,12 @@
   <table>
     <tr>
       <td>
-        <div class="login"><a href='#' class="login-btn">Login via Google</a></div>
-        <div class="logout" style="display:none">
-          <div class="user-info"></div>[<a href='#' class="logout-btn">logout</a>]
+        <div class="login" <%if @current_user%>style="display:none"<%end%>>
+          <a href='#' class="login-btn">Login via Google</a>
+        </div>
+        <div class="logout" <%if !@current_user%>style="display:none"<%end%>>
+        <div class="user-info"><%if @current_user%>Welcome, <%=@current_user.name%><%end%></div>
+          [<a href='#' class="logout-btn">logout</a>]
         </div>
       </td>
       <td class="flash-note"></td>
