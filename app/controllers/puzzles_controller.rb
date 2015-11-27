@@ -1,5 +1,7 @@
+require 'nokogiri'
+
 class PuzzlesController < ApplicationController
-  before_action :set_puzzle, only: [:show, :edit, :update, :destroy]
+  before_action :set_puzzle, only: [:show, :save, :load, :edit, :update, :destroy]
   before_action :set_puzzle_config, only: [:show, :index, :configure]
 
   # GET /puzzles
@@ -20,9 +22,49 @@ class PuzzlesController < ApplicationController
   # POST /puzzles/1/save
   # POST /puzzles/1/save.json
   def save
-    respond_to do |format|
-      format.html { render text: "OK" }
+    post_data = request.raw_post
+    begin
+      doc = Nokogiri.XML(post_data)
+      root = doc.root
+      header = (root>"header").first
+      time = (header>"time").first
+      flags = (header>"flags").first
+      code = (header>"code").first
+      data = (root>"data").first
+      uid = "0"
+      uid = @current_user.id if @current_user
+      saveParam = {
+        :puzzle_id => params[:id],
+        :user_id => uid,
+        :first_save => time['firstSave'],
+        :last_save => time['lastSave'],
+        :total => time['total'],
+        :solved => flags['solved'],
+        :family_ref => code['familyRef'],
+        :variant_ref => code['variantRef'],
+        :member_ref => code['memberRef'],
+        :serial => code['serial'],
+        :data => data.children.to_xml
+      }
+    rescue => e
+      logger.error e
+      render text: "Invalid save! #{e} \n #{post_data}", :status => 422
+      return
     end
+    if saveParam[:member_ref].to_s == "0" and @current_user
+      saveParam[:member_ref] = @current_user.uid
+    end
+    if PuzzleSave.create saveParam
+      render text: "OK"
+    else
+      render text: "FAILURE", :status => 422
+    end
+  end
+
+  # POST /puzzles/1/save/1
+  # POST /puzzles/1/save/1.json
+  def load
+    @puzzle_save = PuzzleSave.find(params[:save_id])
   end
 
   # GET /puzzles/config.xml

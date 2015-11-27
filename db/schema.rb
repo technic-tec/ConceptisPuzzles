@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151117064537) do
+ActiveRecord::Schema.define(version: 20151127035428) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,24 @@ ActiveRecord::Schema.define(version: 20151117064537) do
   end
 
   add_index "properties", ["puzzle_id"], name: "index_properties_on_puzzle_id", using: :btree
+
+  create_table "puzzle_saves", force: :cascade do |t|
+    t.integer  "puzzle_id"
+    t.integer  "user_id"
+    t.datetime "first_save"
+    t.datetime "last_save"
+    t.integer  "total"
+    t.boolean  "solved"
+    t.string   "family_ref"
+    t.string   "variant_ref"
+    t.string   "member_ref"
+    t.string   "serial"
+    t.text     "data"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "puzzle_saves", ["puzzle_id", "member_ref"], name: "index_puzzle_saves_on_puzzle_id_and_member_ref", using: :btree
 
   create_table "puzzles", force: :cascade do |t|
     t.string   "guid"
