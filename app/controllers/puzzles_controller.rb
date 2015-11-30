@@ -11,12 +11,13 @@ class PuzzlesController < ApplicationController
     @page = 1 if @page < 1
     @perPage = (params[:per_page] || 12).to_i
     @total = Puzzle.count;
-    @puzzles = Puzzle.limit(@perPage).offset(@perPage*(@page-1))
+    @puzzles = Puzzle.limit(@perPage).offset(@perPage*(@page-1)).map(&@set_puzzle_save)
   end
 
   # GET /puzzles/1
   # GET /puzzles/1.json
   def show
+    set_puzzle_save(@puzzle)
   end
 
   # POST /puzzles/1/save
@@ -64,7 +65,19 @@ class PuzzlesController < ApplicationController
   # POST /puzzles/1/save/1
   # POST /puzzles/1/save/1.json
   def load
-    @puzzle_save = PuzzleSave.find(params[:save_id])
+    @puzzle_save = PuzzleSave.find_or_initialize_by(:id => params[:save_id]) { |save|
+      save.assign_attributes(:puzzle_id => @puzzle.id,
+        :user_id => @current_user.id,
+        :first_save => "",
+        :last_save => "",
+        :total => 0,
+        :solved => false,
+        :family_ref => @puzzle.codeFamily,
+        :variant_ref => @puzzle.codeVariant,
+        :member_ref => @current_user.uid,
+        :serial => @puzzle.serialNumber,
+        :data => "")
+    }
   end
 
   # GET /puzzles/config.xml
@@ -125,6 +138,17 @@ class PuzzlesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def set_puzzle_save(puzzle)
+      if @current_user
+        save_id = PuzzleSave.where(:puzzle_id => puzzle.id, :member_ref => @current_user.uid).order(:updated_at => :desc).first_or_initialize(:id => 0).id
+        puzzle.save_url = save_puzzle_path
+        puzzle.load_url = "#{puzzle.save_url}/#{save_id}"
+      else
+        puzzle.save_url = puzzle.load_url = 'cookie'
+      end
+      puzzle
+    end
+
     def set_puzzle
       @puzzle = Puzzle.find(params[:id])
     end
