@@ -1,4 +1,4 @@
-class PuzzleSave < ActiveRecord::Base
+class PuzzleSafe < ActiveRecord::Base
   belongs_to :puzzle
   belongs_to :user
 end
