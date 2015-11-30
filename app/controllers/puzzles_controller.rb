@@ -54,7 +54,7 @@ class PuzzlesController < ApplicationController
     if saveParam[:member_ref].to_s == "0" and @current_user
       saveParam[:member_ref] = @current_user.uid
     end
-    if PuzzleSafe.create saveParam
+    if PuzzleSave.create saveParam
       render text: "OK"
     else
       render text: "FAILURE", :status => 422
