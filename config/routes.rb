@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     end
     member do
       post 'save'
+      get 'save/:save_id' => "puzzles#load", as: :load, defaults: {format: 'xml'}
     end
   end
   get "/auth/:provider/callback" => "sessions#create", defaults: {format: 'html'}

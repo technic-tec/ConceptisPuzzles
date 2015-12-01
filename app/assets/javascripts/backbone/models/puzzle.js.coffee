@@ -17,6 +17,7 @@ class ConceptisPuzzles.Models.Puzzle extends Backbone.RelationalModel
     xml_url: null
     config_url: null
     save_url: null
+    load_url: null
     family_name: null
     family_logic: null
     family_abbr: null

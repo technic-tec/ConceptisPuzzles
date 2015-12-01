@@ -11,7 +11,7 @@ class PuzzlesController < ApplicationController
     @page = 1 if @page < 1
     @perPage = (params[:per_page] || 12).to_i
     @total = Puzzle.count;
-    @puzzles = Puzzle.limit(@perPage).offset(@perPage*(@page-1)).map(&@set_puzzle_save)
+    @puzzles = Puzzle.limit(@perPage).offset(@perPage*(@page-1)).map { |puzzle| set_puzzle_save(puzzle) }
   end
 
   # GET /puzzles/1
@@ -141,7 +141,7 @@ class PuzzlesController < ApplicationController
     def set_puzzle_save(puzzle)
       if @current_user
         save_id = PuzzleSave.where(:puzzle_id => puzzle.id, :member_ref => @current_user.uid).order(:updated_at => :desc).first_or_initialize(:id => 0).id
-        puzzle.save_url = save_puzzle_path
+        puzzle.save_url = save_puzzle_path puzzle
         puzzle.load_url = "#{puzzle.save_url}/#{save_id}"
       else
         puzzle.save_url = puzzle.load_url = 'cookie'
