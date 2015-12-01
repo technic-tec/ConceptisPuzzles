@@ -12,7 +12,7 @@ body {
   line-height: 18px;
 }
 
-.puzzle-container .content {
+#puzzles, .puzzle-container {
   overflow-x: scroll;
 }
 
