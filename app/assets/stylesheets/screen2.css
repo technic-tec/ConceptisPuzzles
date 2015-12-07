@@ -1,0 +1,1071 @@
+/*	--
+	--
+	--	Layout */
+.content p
+{
+	margin: 0 0 0.5em;
+}
+
+h1
+{
+	margin-bottom: 1.1em;
+}
+
+h2
+{
+	margin: 0;
+	padding-bottom: 1.1em;
+}
+
+h2.larger
+{
+	font-size: 1.3em;
+	padding-bottom: 0.45em;
+}
+
+.larger
+{
+	font-size: 1.1em;
+}
+
+input.button
+{
+	width: auto;
+	overflow: visible;
+}
+
+h5
+{
+	margin: 0.5em 0em;
+}
+
+#updateIcon
+{
+	margin-top: 2.4em;
+}
+
+.puzzlelist h1
+{
+	margin-left: 1.7em;
+}
+
+.puzzlelist dl
+{
+	padding-left: 0.9em;
+}
+
+.puzzlelist dd, .puzzlelist dd.brand
+{
+	margin-left: 2.2em;
+	line-height: 1.2em;
+}
+
+.puzzlelist dt
+{
+	margin-left: 0.2em;
+}
+
+.puzzlelist dl.tshirt dd.winner
+{
+	width: 14em;
+}
+
+ul.profile
+{
+	margin-top: 1.8em;
+	margin-bottom: 0.7em;
+}
+
+.myconceptis .publication
+{
+	padding-bottom: 2.3em;
+}
+
+.channel .publication
+{
+	padding-bottom: 2.3em;
+}
+
+.channel .puzzlelist
+{
+	padding-top: 3.8em;
+	padding-bottom: 0;
+	_padding-left: 1.1em;
+	_margin-left: 0em;
+}
+
+.channel .content
+{
+	padding-bottom: 2.2em;
+}
+
+.channel .puzzlelist dl
+{
+	height: 23.7em;
+	padding-left: 1em;
+	_padding-left: 0.7em;
+}
+
+.channel .puzzlelist dd, .channel .puzzlelist dd.brand
+{
+	width: 15em;
+	margin-left: 2em;
+}
+
+#updateIcon, #rulesIconLight
+{
+	height: 3.3em;
+	background-repeat: no-repeat;
+}
+
+#rulesIconLight
+{
+	margin-top: 1em;
+	width: 13.3em;
+}
+
+#updateIcon p, #rulesIconLight p
+{
+	margin: 0 0 0 5.4em;
+	line-height: 1.3em;
+	position: relative;
+}
+
+#updateIcon p
+{
+	_top: 0.7em;
+	top: 0.8em;
+}
+
+#rulesIconLight p
+{
+	_top: 0.5em;
+	top: 0.6em;
+}
+
+#rulesIconLight a
+{
+	font-weight: bold;
+	margin-top: 4px;
+}
+
+a.play:link, a.play:visited, a.link:hover
+{
+	font-weight: bold;
+}
+
+.dontmiss
+{
+	margin: 0em 3.4em 0 3.8em;
+}
+
+.dontmiss h2
+{
+	margin-bottom: 0.4em;
+}
+
+.dontmiss h2 img
+{
+	margin: 0.9em 0em 0em 0;
+}
+
+.dontmiss p
+{
+	margin-top: 0.4em;
+	margin-bottom: 0;
+	font-size: 1em;
+}
+
+/*	--
+	--	Style
+	*/
+
+.content p
+{
+	font-size: 1em;
+}
+
+.puzzlelist .brand
+{
+	font-size: 1em;
+}
+
+.questionmark
+{
+	margin-left: 0.05em;
+	margin-top: -0.1em;
+	vertical-align: middle;
+}
+
+a.help
+{
+	cursor: default;
+	position: relative;
+	z-index: 23;
+}
+
+a.help span
+{
+	display: none;
+}
+
+a.help:hover span
+{
+	display: block;
+	padding: 1em;
+	width: 13.4em;
+	position: absolute;
+	top: -0.9em;
+	left: 1.45em;
+	z-index: 22;
+	border: 0.1em solid white;
+	background-color: #E7E4CA;
+	text-decoration: none;
+	color: black;
+}
+
+/*	--
+	--
+	--	Color 
+	*/
+.sidebar
+{
+	background-color: #CAE6F6;
+}
+/* take this block away when committing Book store */
+.sidebar #profile
+{
+	background-image: url("../../picture/5/188.gif");
+}
+
+.sidebar #account
+{
+	background-image: url("../../picture/21/1836.gif");
+}
+/* end of the take-away block */
+.sidebar .familyappendixnav li a
+{
+	width: 5em;
+}
+
+.iconnavigation li a
+{
+	top: 0.7em;
+	font-weight: bold;
+}
+
+.iconnavigation li a:visited
+{
+	color: #0590b8;
+}
+
+.iconnavigation li a:hover
+{
+	color: #005893;
+}
+.sidebar .familynav
+{
+	margin-bottom: -0.2em;
+}
+.sidebar .familynav ul
+{
+	margin-bottom: 0;
+}
+.sidebar .familynav li img
+{
+	margin-top: 0.3em;
+}
+.sidebar h3
+{
+	margin-top: 0.9em;
+	margin-bottom: 0.15em;
+}
+.sidebar h3:first-child
+{
+	margin-top: 1.5em;
+	margin-bottom: 0.2em;
+}
+.sidebar .pubclipping:first-child h2
+{
+	padding-top: 1.05em;
+}
+.sidebar .fragment
+{
+	border-color: #0590b8;
+}
+
+.publication
+{
+	border-color: #ffffff;
+}
+
+a.play:link, a.play:visited, a.link:hover
+{
+	color: red;
+}
+
+/*	--	Layout for sidebar elements
+	----------------------------------------	*/
+.sidebar .fragment .pubclipping
+{
+	margin-top: 0.5em;
+}
+
+.iconnavigation
+{
+	padding-top: 1.6em;
+}
+
+/* --  C4 definitions 
+	-----------------------------------------	*/
+.myconceptis .puzzlelist h1
+{
+	margin-left: 1.45em;
+}
+
+.myconceptis .puzzlelist dl
+{
+	height: 23.6em;
+}
+
+.myconceptis .puzzlelist h2
+{
+	padding-bottom: 0.4em;
+}
+
+.mypuzzles
+{
+	padding: 0em 3.8em 4em;
+	width: 49.7em;
+	min-width: 497px;
+}
+
+.mypuzzles h1
+{
+	clear: both;
+	_height: 0;
+	zoom: 1;
+	margin-top: -0.1em;
+	margin-bottom: 0.25em;
+	padding: 1.86em 0 0em 0;
+}
+.mycontop
+{
+	padding: 1.8em 3.8em 1.6em;
+}
+
+.mychantop
+{
+	padding: 0.7em 3.8em 0.7em;
+}
+
+.myconceptis div.topop, .account div.topop
+{
+	float: left;
+}
+
+.myconceptis .lastNextUpdate .color, .account .lastNextUpdate .color
+{
+	color: #0590B8;
+}
+div.topop a, .lastNextUpdate span
+{
+	display: block;
+	height: 3.5em;
+	background-repeat: no-repeat;
+	padding-left: 5.5em;
+	padding-top: 0.7em;
+	font-weight: bold;
+}
+.mycontop div.topop a:visited
+{
+	color: #0590B8;
+}
+
+.mycontop div.topop a:hover
+{
+	color: #005893;
+}
+
+.lastNextUpdate
+{
+	margin-right: 0em;
+}
+
+.lastNextUpdate span
+{
+	line-height: 1.3em;
+	margin-bottom: 0em;
+	background-image: url("../../picture/21/1795.gif");
+	padding-top: 0.5em;
+	width: 16.7em;
+	font-weight: normal;
+}
+.credits a
+{
+	background-image: url("../../picture/21/1797.gif");
+	margin-right: 3.1em;
+	width: 3.9em;
+}
+.discount a
+{
+	background-image: url("../../picture/21/1796.gif");
+	width: 9.2em;
+}
+.mypuzzles .myfam
+{
+	float: left;
+	margin-top: 1.8em;
+}
+.mypuzzles td
+{
+	padding-right: 1.1em;
+}
+.mypuzzles td a
+{
+	font-size: 0.9em;
+}
+
+.mypuzzles td img
+{
+	margin-bottom: 0.1em;
+	width: 106px;
+}
+
+.mypuzzles td object
+{
+	position: relative;
+	left: -1.3em;
+}
+
+.mypuzzles .trianglelink
+{
+	margin-top: 0.3em;
+	margin-bottom: 0;
+}
+
+.mypuzzles ul.trianglelink li
+{
+	font-family: Verdana;
+	font-size: 1em;
+	height: auto	;
+	margin-top: -0.1em;
+}
+.mypuzzles ul.trianglelink li a
+{
+	background-position: 0 0.2em;
+}
+.myfam a:link, .myfam a:visited
+
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+.myfam a:hover
+{
+	text-decoration: underline;
+}
+
+.mychantop td
+{
+	vertical-align: top;
+}
+
+.mychantop .topop
+{
+	margin-bottom: 0.6em;
+}
+
+.mychantop td li
+{
+	font-size: 1em;
+}
+
+.nssbList
+{
+	width: 12.7em;
+}
+
+.mychantop td.nssbList h2
+{
+	margin-top: 0.9em;
+	margin-bottom: -1.2em;
+	font-size: 1.2em;
+	padding-left: 0.25em;
+}
+
+.nssbList li
+{
+	display: block;
+	padding: 0em 0 0.1em 0.4em;
+	margin-top: 0.6em;
+	width: 11.3em;
+	font: Verdana 1em plain;
+	height: 1.5em;
+}
+
+.nssbList li.week
+{
+	width: 12.3em;
+}
+
+.nssbList a:link, .nssbList a:visited
+{
+	text-decoration: none;
+	color: #000;
+}
+
+.nssbList a:hover
+{
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.mychantop ul li.active, .calendar ul li.active
+{
+	background-color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.calendar
+{
+	width: 14.6em;
+}
+#filters{
+	padding: 0em 1em 0em;
+	margin-top: 0;
+	background-color: White;
+	position: relative;
+	height: 11.7em;
+}
+#filtercombos div
+{
+	height: 9.6em;
+}
+#updatemsg
+{
+	display: none;
+	z-index: -1;
+	background-color: White;
+	font-weight: bold;
+	position: absolute;
+	top: 0.6em;
+	left: 1em;
+	padding-top: 3.5em;
+}
+#updatemsg div
+{
+	width: 11.4em;
+	text-align: center;
+}
+	
+#resetfilter
+{
+	padding-top: 0.1em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	font-weight: bold;
+}
+.calendar .familybutton
+{
+	font-weight: bold;
+	margin: 0;
+}
+.calendar li
+{
+	text-align: center;
+	padding-bottom: 0.5em;
+	padding-top: 1em;
+}
+.calendar h4
+{
+	line-height: 1.2em;
+	margin: 0;
+	padding-top: 0.3em;
+	padding-bottom: 0em;
+}
+.select
+{
+	position: absolute;
+	width: 126px;
+	height: 17px;
+	padding: 0.1em 0 0 0.2em;
+	color: black;
+	font-size: 1em;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	display: block;
+}
+.calendar .styled
+{
+	font-size: 1.1em;
+	height: 17px;
+}
+.calendar .blocklink li
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+.icons
+{
+	width: 22.4em;
+	padding-top: 0.7em;
+}
+
+.mychan h1
+{
+	margin-top: -0.25em;
+}
+
+.channel .mychan
+{
+	padding-bottom: 1em;
+}
+
+.channel .triangle li
+{
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Transaction Buy */
+.buy h1
+{
+	margin-left: -0.1em;
+	margin-bottom: 1.1em;
+}
+
+.viewer
+{
+	height: 22.9em;
+	width: 33.3em;
+	padding: 3.8em;
+}
+
+.viewer h1
+{
+	margin-top: -0.2em;
+	margin-left: 0em;
+}
+
+.viewer dl dt
+{
+	margin-left: 0;
+}
+
+.viewer input.button
+{
+	float: right;
+	margin-top: 1.55em;
+}
+
+.buy p, .buy form p
+{
+	font-size: 1.1em;
+}
+
+.buy form
+{
+	padding-bottom: 1.5em;
+}
+.buy .fragment
+{
+	margin-top: 0.9em;
+}
+.buybuttons table
+{
+	float: right;
+	margin-top: 0.3em;		
+}
+.buybuttons input.button
+{
+	width: 100%;
+	font-size: 1.1em;
+	margin-top: 0.5em;
+}
+.buttons input.button
+{
+	float: right;
+	margin-left: 0.7em;
+	font-size: 1.1em;
+}
+h2.discount
+{
+	background-repeat: no-repeat;
+	width: auto;
+	margin-top: -0.3em;
+	margin-bottom: 0.63em;
+	padding-bottom: 0;
+	padding-top: 0em;
+	font-size: 1.2em;
+}
+
+/* Weekly package */
+
+.weekly h1
+{
+	margin-bottom: 0.9em;
+}
+
+.weekly div p
+{
+	font-size: 1.1em;
+	margin-bottom: 0.5em;
+}
+
+.weekly .calendar
+{
+	float: right;
+	margin-top: -0.2em;
+	border-left: 0.6em solid #F3F0E1;
+	margin-left: 2em;
+}
+
+.weekly .active a:visited
+{
+	color: #0590b8;
+}
+
+.weekly .active a:hover, .weekly .active a:active
+{
+	color: #005893;
+}
+
+.weekly ul.circle
+{
+	margin-top: 1.3em;
+	font-size: 1.1em;
+}
+
+.weekly ul.circle li
+{
+	font-size: 1em;
+	background-position: 0 0.4em;
+}
+
+.weekly .fragment
+{
+	border-color: #0590B8;
+}
+
+.weekly .fragment, .weekly .fragment_error_message
+{
+	margin-top: 0.4em;
+	width: auto;
+}
+
+.weekly .border h2
+{
+	background-image: url("../../picture/21/1796.gif");
+	background-repeat: no-repeat;
+	padding: 1.6em 0 0.35em 4.8em;
+	font-size: 1.2em;
+	margin-top: 0.7em;
+	height: 1.15em;
+}
+
+.weekly .buttons input
+{
+	margin-left: 0.6em;
+	margin-top: 2.1em;
+	position: relative;
+	top: 0.1em;
+}
+
+.weekly .buttonsdown input
+{
+	margin-top: 2.9em;
+}
+
+.weekly .myfam h2
+{
+	width: 23.5em;
+	border-bottom: 0.1em solid;
+	padding-bottom: 0em;
+	padding-top: 0.4em;
+}
+
+.weekly .myfam .sum
+{
+	float: right;
+	position: relative;
+	top: 0.3em;
+}
+
+.weekly .trianglelink
+{
+	clear: both;
+	margin-top: 0.6em;
+	margin-bottom: 1.7em;
+}
+
+.weekly .purchased
+{
+	font-size: 1.1em;
+	color: #c51015;
+}
+.weekly p.purchased
+{
+	margin-bottom: 1.3em;
+}
+
+.weekly div.purchased
+{
+	float: left;
+	width: 30em;
+}
+
+.weekly .purchased a, .weekly .purchased a:hover, .weekly .purchased a:visited
+{
+	color: #c51015;
+}
+
+.weekly ul.trianglelink li.purchased a
+{
+	background-image: url("../../picture/21/1799.gif");
+	background-repeat: no-repeat;
+}
+
+.weekly ul.trianglelink li a
+{
+	background-position: 0 0.3em;
+}
+/* Account */
+.account h2
+{
+	font-size: 1.2em;
+	margin-top: 1.7em;
+	padding-bottom: 0.5em;
+}
+
+.account p
+{
+	line-height: 1.2em;
+	font-size: 1.1em;
+}
+
+.account .pending p
+{
+	margin-bottom: 2.2em;
+}
+
+.account .pending input.button
+{
+	margin-top: 1.6em;
+}
+
+.account p a.help:hover span
+{
+	font-size: 0.9em;
+	left: 2.1em;
+	width: 25.1em;
+}
+
+.account .filter
+{
+	background-color: #E9E5CA;
+	padding: 1.3em 1.5em 1.3em;
+	margin-top: 2.4em;
+}
+
+.account .filter td
+{
+	padding-bottom: 1em;
+}
+
+.account .filter input
+{
+	margin-right: 0.3em;
+	position: relative;
+	top: 0.2em;
+}
+
+.account td.buttons
+{
+	padding-top: 0.1em;
+	text-align: right;
+	padding-bottom: 0;
+}
+
+.account .filter input.button
+{
+	margin-right: -0.1em;
+	margin-bottom: 0.1em;
+	float: none;
+}
+
+.account #filter_hyphen
+{
+	padding: 0 0.5em;
+}
+
+.account .error_message
+{
+	margin: 1em 0;
+	width: 15em;
+}
+
+.account select
+{
+	margin-right: 0.1em;
+}
+
+.account .tableTop
+{
+	margin-top: 2.4em;
+	width: 49.5em;
+}
+
+.account .tableTop img
+{
+	margin-left: 0.1em;
+}
+
+.account .paging
+{
+	margin-top: 0;
+	padding-top: 1em;
+	padding-bottom: 0.9em;
+	margin-bottom: 0;
+	float: left;
+	width: 35.9em;
+}
+
+.account .nowrap
+{
+	white-space: nowrap;
+}
+
+.account .pagingbottom
+{
+	padding-top: 0.45em;
+	float: none;
+}
+
+.account .questionmark
+{
+	margin-left: 0.4em;
+	margin-top: -0.1em;
+}
+
+table.transactions
+{
+	clear: both;
+}
+
+table.transactions td
+{
+	background-color: #E9E5CA;
+	padding: 0.4em 0.7em;
+}
+
+table.transactions th, table.transactions td
+{
+	border-bottom: 0.5em solid #F3F0E1;
+}
+
+table.transactions th
+{
+	background-color: #808080;
+	padding: 0.6em 0.7em;
+	color: white;
+	text-align: left;
+}
+
+table.transactions th, table.transactions td
+{
+	border-right: 0.1em #F3F0E1 solid;
+}
+
+table.transactions td.tr_date
+{
+	width: 6.1em;
+}
+
+table.transactions td.type
+{
+	width: 9.3em;
+}
+
+table.transactions td.method
+{
+	width: 9.8em;
+}
+
+table.transactions th.lastcolumn, table.transactions td.lastcolumn
+{
+	border-right: none;
+}
+
+.account td a.help .failed_transaction
+{
+	position: absolute;
+	left: 2.5em;
+	top: -0.1em;
+}
+
+.account td a.help:hover span
+{
+	width: 16.4em;
+	text-align: left;
+	top: -1.2em;
+	left: -16.2em;
+}
+
+.account #csvicon
+{
+	padding-top: 1.4em;
+	width: 1.7em;
+	margin-left: 47.9em;
+}
+
+.account .shorter
+{
+	padding-bottom: 3.2em;
+}
+
+table.transactions td.rightaligned
+{
+	text-align: right;
+	padding-right: 2em;
+}
+
+table.transactions td.leftaligned
+{
+	text-align: left;
+}
+
+.paging
+{
+	margin-top: -0.25em;
+	margin-bottom: 1.8em;
+}
+
+.pagingbottom
+{
+	padding-bottom: 0.7em;
+}
+
+/* Buy error */
+
+.buy_error
+{
+	background-color: #F3F0E1;
+	height: 50em;
+	padding-top: 4.1em;
+}
+
+.buy_error .publication div.buttons
+{
+	width: 42.5em;
+	margin-top: 4.3em;
+}
+
+.buy_error .error_message
+{
+	font-size: 1.2em;
+}
