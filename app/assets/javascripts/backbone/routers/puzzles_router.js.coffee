@@ -5,8 +5,7 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
 
   routes:
     "new"      : "newPuzzle"
-    "index"    : "index"
-    "p:pg"     : "index"
+    "(f:family)(/)(v:variant)(/)(m:model)(/)(d:difficulty)(/)(p:pg)"     : "index"
     ":id/edit" : "edit"
     ":id"      : "show"
     ".*"        : "index"
@@ -23,12 +22,27 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
     @view = new ConceptisPuzzles.Views.Puzzles.NewView(collection: @puzzles)
     $("#puzzles").html(@view.render().el)
 
-  index: (pg)->
-    @view = new ConceptisPuzzles.Views.Puzzles.IndexView(collection: @puzzles)
-    $("#puzzles").html(@view.render().el)
+  index: (family, variant, model, difficulty, pg)->
+    options = {}
+    option_uri = ""
+    if family
+      options.family = family
+      option_uri += "/f#{family}"
+    if variant
+      options.variant = variant
+      option_uri += "/v#{variant}"
+    if model
+      options.model = model
+      option_uri += "/m#{model}"
+    if difficulty
+      options.difficulty = difficulty
+      option_uri += "/d#{difficulty}"
     if pg is undefined or pg is null
       pg = 1
-    @puzzles.fetch({data: {page: pg}, reset: true})
+    options.page = pg
+    @view = new ConceptisPuzzles.Views.Puzzles.IndexView(collection: @puzzles, option_uri: option_uri, pg: pg, family: family)
+    $("#puzzles").html(@view.render().el)
+    @puzzles.fetch({data: options, reset: true})
 
   show: (id) ->
     puzzle = @get_or_fetch(id)

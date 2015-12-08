@@ -1,14 +1,17 @@
-<td><%= guid %></td>
-<td><%= family_name %></td>
-<td><%= variant_name %></td>
-<td><%= codeModel %></td>
-<td><%= serialNumber %></td>
-<td><%= versionMajor %></td>
-<td><%= versionMinor %></td>
-<td><%= builderVersion %></td>
-<td><%= creationDate %></td>
-<td><%= releaseDate %></td>
-
-<td><a href="#/<%= id %>">Show</a></td>
-<td><a href="#/<%= id %>/edit">Edit</a></td>
-<td><a href="#/<%= id %>/destroy" class="destroy">Destroy</a></td>
+<dl class="normal">
+	<input type="hidden" value="true" name="boughtpuzzle" id="boughtpuzzle" />
+	<input type="hidden" name="freepuzzle" value="false" id="freepuzzle" />
+	<dt>
+		<object type="application/x-shockwave-flash" data="flash/3/34.swf" width="165" height="147">
+      <param name="quality" value="high" />
+      <param name="movie" value="/flash/3/34.swf" />
+      <param name="bgcolor" value="<%= family_background %>" />
+      <param name="base" value="" />
+      <param name="wmode" value="window" />
+      <param name="flashVars" value="cafurl=<%= xml_url %>&amp;configurl=<%= config_url %>&amp;mode=viewer&amp;display=save&amp;btn=play&amp;btnurl=#/<%= id %>&amp;saveurl=<%= save_url %>&amp;loadurl=<%= load_url %>&amp;bgcol=<%= family_background %>" />
+		</object>
+	</dt>
+  <dd class="brand"><%= variant_name %>	<%= family_name %>	<%= codeModel %><br /></dd>
+  <dd>Difficulty: <%= difficulty %></dd>
+  <dd>ID: <%= codeFamily %><%= codeVariant %><%= serialNumber %></dd>
+</dl>

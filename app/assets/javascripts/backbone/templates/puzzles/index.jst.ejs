@@ -1,22 +1,71 @@
-<h1>Listing puzzles</h1>
-
-<table id="puzzles-table">
-  <tr>
-    <th>Guid</th>
-    <th>Family</th>
-    <th>Variant</th>
-    <th>Model</th>
-    <th>Serialnumber</th>
-    <th>VersionMajor</th>
-    <th>VersionMinor</th>
-    <th>BuilderVersion</th>
-    <th>CreationDate</th>
-    <th>ReleaseDate</th>
-  </tr>
-</table>
-
-<br/>
-
-<div id="prev-page">Prev</div>
-<div id="next-page">Next</div>
-<a href="#/new">New Puzzle</a>
+<div class="wrap">
+	<table id="layout" summary="main layout">
+		<tr>
+			<td class="sidebar">
+				<div class="fragment familynav">
+					<h3>Picture Logic puzzles</h3>
+					<!--<ul>
+						<li>
+							<a href="index.aspx?uri=myconceptis/channel/pap">
+								<img src="http://www.conceptispuzzles.com/picture/18/132.gif" alt="Pic-a-Pix" title="Pic-a-Pix" class="pc1" />
+							</a>
+            </li>
+          </ul>-->
+					<h3>Number Logic puzzles</h3>
+					<!--<ul>
+						<li>
+							<a href="index.aspx?uri=myconceptis/channel/sud">
+								<img src="http://www.conceptispuzzles.com/picture/18/164.gif" alt="Sudoku" title="Sudoku" class="pc1" />
+							</a>
+						</li>
+          </ul>-->
+				</div>
+			</td>
+      <td class="content <%= options.fam %>">
+				<div class="mychan border">
+					<div class="puzzlelist">
+						<div class="paging">
+              <a id="newest" style="background-image: url(<%= asset_path 'picture/46/132.gif' %>);" href="#<%= options.option_uri %>/p1">
+								<span>&lt;&lt;</span>
+							</a>
+              <% if(puzzles.page > 1) { %>
+							<span class="prev">
+								<a href="#<%= options.option_uri %>/p<%= puzzles.page-1 %>">Newer</a>
+							</span>
+              <% } %>
+              <% if(puzzles.page * puzzles.perPage < puzzles.total) { %>
+							<span class="next">
+								<a href="#<%= options.option_uri %>/p<%= puzzles.page+1 %>">Older</a>
+							</span>
+              <% } %>
+              <a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#<%= options.option_uri %>/p<%= (puzzles.total + puzzles.perPage - 1) / puzzles.perPage %>">
+								<span>&gt;&gt;</span>
+							</a>
+						</div>
+						<div class="paging pagingbottom">
+              <a id="newest" style="background-image: url(<%= asset_path 'picture/46/132.gif' %>);" href="#<%= options.option_uri %>/p1">
+								<span>&lt;&lt;</span>
+							</a>
+              <% if(puzzles.page > 1) { %>
+							<span class="prev">
+								<a href="#<%= options.option_uri %>/p<%= puzzles.page-1 %>">Newer</a>
+							</span>
+              <% } %>
+              <% if(puzzles.page * puzzles.perPage < puzzles.total) { %>
+							<span class="next">
+								<a href="#<%= options.option_uri %>/p<%= puzzles.page+1 %>">Older</a>
+							</span>
+              <% } %>
+              <a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#<%= options.option_uri %>/p<%= (puzzles.total + puzzles.perPage - 1) / puzzles.perPage %>">
+								<span>&gt;&gt;</span>
+							</a>
+						</div>
+					</div>
+					<div class="clrdiv">
+						<!---->
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
