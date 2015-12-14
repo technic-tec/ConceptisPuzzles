@@ -235,12 +235,12 @@ a.help:hover span
 /* take this block away when committing Book store */
 .sidebar #profile
 {
-	background-image: url("../../picture/5/188.gif");
+	background-image: url(<%=asset_path "picture/5/188.gif"%>);
 }
 
 .sidebar #account
 {
-	background-image: url("../../picture/21/1836.gif");
+	background-image: url(<%=asset_path "picture/21/1836.gif"%>);
 }
 /* end of the take-away block */
 .sidebar .familyappendixnav li a
@@ -396,20 +396,20 @@ div.topop a, .lastNextUpdate span
 {
 	line-height: 1.3em;
 	margin-bottom: 0em;
-	background-image: url("../../picture/21/1795.gif");
+	background-image: url(<%=asset_path "picture/21/1795.gif"%>);
 	padding-top: 0.5em;
 	width: 16.7em;
 	font-weight: normal;
 }
 .credits a
 {
-	background-image: url("../../picture/21/1797.gif");
+	background-image: url(<%=asset_path "picture/21/1797.gif"%>);
 	margin-right: 3.1em;
 	width: 3.9em;
 }
 .discount a
 {
-	background-image: url("../../picture/21/1796.gif");
+	background-image: url(<%=asset_path "picture/21/1796.gif"%>);
 	width: 9.2em;
 }
 .mypuzzles .myfam
@@ -760,7 +760,7 @@ h2.discount
 
 .weekly .border h2
 {
-	background-image: url("../../picture/21/1796.gif");
+	background-image: url(<%=asset_path "picture/21/1796.gif"%>);
 	background-repeat: no-repeat;
 	padding: 1.6em 0 0.35em 4.8em;
 	font-size: 1.2em;
@@ -826,7 +826,7 @@ h2.discount
 
 .weekly ul.trianglelink li.purchased a
 {
-	background-image: url("../../picture/21/1799.gif");
+	background-image: url(<%=asset_path "picture/21/1799.gif"%>);
 	background-repeat: no-repeat;
 }
 

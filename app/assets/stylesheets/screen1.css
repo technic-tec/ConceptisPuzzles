@@ -475,12 +475,12 @@ select option
 
 ul.circle li
 {
-	background-image: url("../../picture/21/460.gif");
+	background-image: url(<%=asset_path "picture/21/460.gif"%>);
 }
 
 ul.triangle li, ul.trianglelink li a
 {
-	background-image: url("../../picture/8/68.gif");
+	background-image: url(<%=asset_path "picture/8/68.gif"%>);
 }
 
 ul.triangle li, ul.circle li, ul.trianglelink li a
@@ -624,7 +624,7 @@ html
 .wrap, .forum_wrap .hd
 {
 	background-color: white;
-	background-image: url("../../picture/21/3113.gif");
+	background-image: url(<%=asset_path "picture/21/3113.gif"%>);
 	background-repeat: repeat-x;
 	background-position: right top;
 }
@@ -775,7 +775,7 @@ img.flag
 
 .paging .prev a
 {
-	background-image: url("../../picture/21/313.gif");
+	background-image: url(<%=asset_path "picture/21/313.gif"%>);
 	background-repeat: no-repeat;
 	background-position: 0% 70%;
 	padding-left: 1.2em;
@@ -784,7 +784,7 @@ img.flag
 }
 .paging .next a
 {
-	background-image: url("../../picture/21/312.gif");
+	background-image: url(<%=asset_path "picture/21/312.gif"%>);
 	background-position: 100% 70%;
 	background-repeat: no-repeat;
 	padding-bottom: 0;
@@ -915,7 +915,7 @@ img.flag
 	font-weight: bold;
 	width: 9.6em;
 	margin-top: -2.6em;
-	background-image: url("../../picture/21/2073.gif");
+	background-image: url(<%=asset_path "picture/21/2073.gif"%>);
 	background-repeat: no-repeat;
 	padding-left: 2.8em;
 	height: 2.4em;
@@ -1109,17 +1109,17 @@ a:hover .playnewpuzzles
 }
 .sidebar #credits
 {
-	background-image: url("../../picture/21/2632.gif");
+	background-image: url(<%=asset_path "picture/21/2632.gif"%>);
 }
 
 .sidebar #playonline
 {
-	background-image: url("../../picture/21/2631.gif");
+	background-image: url(<%=asset_path "picture/21/2631.gif"%>);
 }
 
 .sidebar #bookstore
 {
-	background-image: url("../../picture/21/2946.gif");
+	background-image: url(<%=asset_path "picture/21/2946.gif"%>);
 }
 .sidebar .familyappendixnav li#playonmobile a
 {
