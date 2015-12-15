@@ -25,40 +25,58 @@
 				<div class="mychan border">
 					<div class="puzzlelist">
 						<div class="paging">
+              {{ if(options.page > 1) { }}
               <a id="newest" style="background-image: url(<%= asset_path 'picture/46/132.gif' %>);" href="#{{= options.option_uri }}/p1">
 								<span>&lt;&lt;</span>
 							</a>
-              {{ if(puzzles.page > 1) { }}
 							<span class="prev">
-								<a href="#{{= options.option_uri }}/p{{= puzzles.page-1 }}">Newer</a>
+								<a href="#{{= options.option_uri }}/p{{= options.page-1 }}">Newer</a>
 							</span>
               {{ } }}
-              {{ if(puzzles.page * puzzles.perPage < puzzles.total) { }}
+              {{ for(iPage = Math.max(1, options.page-4); iPage <= options.page + 4 && iPage <= Math.floor((options.total + options.perPage - 1)/options.perPage); iPage++) { }}
+              {{ if(options.page == iPage) { }}
+              <span class="index">{{= iPage }}</span>
+              {{ } else { }}
+              <span class="index">
+                <a href="#{{= options.option_uri }}/p{{= iPage }}">{{= iPage }}</a>
+              </span>
+              {{ } }}
+              {{ } }}
+              {{ if(options.page * options.perPage < options.total) { }}
 							<span class="next">
-								<a href="#{{= options.option_uri }}/p{{= puzzles.page+1 }}">Older</a>
+								<a href="#{{= options.option_uri }}/p{{= options.page+1 }}">Older</a>
 							</span>
-              {{ } }}
-              <a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#{{= options.option_uri }}/p{{= (puzzles.total + puzzles.perPage - 1) / puzzles.perPage }}">
+              <a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#{{= options.option_uri }}/p{{= Math.floor((options.total + options.perPage - 1) / options.perPage) }}">
 								<span>&gt;&gt;</span>
 							</a>
+              {{ } }}
 						</div>
 						<div class="paging pagingbottom">
+              {{ if(options.page > 1) { }}
               <a id="newest" style="background-image: url(<%= asset_path 'picture/46/132.gif' %>);" href="#{{= options.option_uri }}/p1">
 								<span>&lt;&lt;</span>
 							</a>
-              {{ if(puzzles.page > 1) { }}
 							<span class="prev">
-								<a href="#{{= options.option_uri }}/p{{= puzzles.page-1 }}">Newer</a>
+								<a href="#{{= options.option_uri }}/p{{= options.page-1 }}">Newer</a>
 							</span>
               {{ } }}
-              {{ if(puzzles.page * puzzles.perPage < puzzles.total) { }}
+              {{ for(iPage = Math.max(1, options.page-4); iPage <= options.page + 4 && iPage <= Math.floor((options.total + options.perPage - 1)/options.perPage); iPage++) { }}
+              {{ if(options.page == iPage) { }}
+              <span class="index">{{= iPage }}</span>
+              {{ } else { }}
+              <span class="index">
+                <a href="#{{= options.option_uri }}/p{{= iPage }}">{{= iPage }}</a>
+              </span>
+              {{ } }}
+              {{ } }}
+              {{ if(options.page * options.perPage < options.total) { }}
 							<span class="next">
-								<a href="#{{= options.option_uri }}/p{{= puzzles.page+1 }}">Older</a>
+								<a href="#{{= options.option_uri }}/p{{= options.page+1 }}">Older</a>
 							</span>
-              {{ } }}
-              <a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#{{= options.option_uri }}/p{{= (puzzles.total + puzzles.perPage - 1) / puzzles.perPage }}">
+              <a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#{{= options.option_uri }}/p{{= Math.floor((options.total + options.perPage - 1) / options.perPage) }}">
 								<span>&gt;&gt;</span>
 							</a>
+              {{ } }}
 						</div>
 					</div>
 					<div class="clrdiv">

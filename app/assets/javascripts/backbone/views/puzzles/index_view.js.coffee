@@ -9,6 +9,9 @@ class ConceptisPuzzles.Views.Puzzles.IndexView extends Backbone.View
     @options = options
 
   addAll: () =>
+    @options.page = @collection.page
+    @options.perPage = @collection.perPage
+    @options.total = @collection.total
     @$el.html(@template( puzzles: @collection.toJSON(), options: @options ))
     @collection.each(@addOne)
 
