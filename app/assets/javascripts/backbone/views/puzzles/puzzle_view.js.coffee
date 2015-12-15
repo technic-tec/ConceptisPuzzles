@@ -6,7 +6,8 @@ class ConceptisPuzzles.Views.Puzzles.PuzzleView extends Backbone.View
   events:
     "click .destroy" : "destroy"
 
-  tagName: "tr"
+  tagName: "dl"
+  className: "normal"
 
   destroy: () ->
     @model.destroy()
