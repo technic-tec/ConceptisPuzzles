@@ -4,79 +4,155 @@
 			<td class="sidebar">
 				<div class="fragment familynav">
 					<h3>Picture Logic puzzles</h3>
-					<!--<ul>
+					<ul>
 						<li>
-							<a href="index.aspx?uri=myconceptis/channel/pap">
-								<img src="http://www.conceptispuzzles.com/picture/18/132.gif" alt="Pic-a-Pix" title="Pic-a-Pix" class="pc1" />
-							</a>
-            </li>
-          </ul>-->
-					<h3>Number Logic puzzles</h3>
-					<!--<ul>
-						<li>
-							<a href="index.aspx?uri=myconceptis/channel/sud">
-								<img src="http://www.conceptispuzzles.com/picture/18/164.gif" alt="Sudoku" title="Sudoku" class="pc1" />
+							<a href="#/f00">
+								<img src="<%= asset_path 'picture/18/132.gif' %>" alt="Pic-a-Pix" title="Pic-a-Pix" class="pc1" />
 							</a>
 						</li>
-          </ul>-->
+						<li>
+							<a href="#/f01">
+								<img src="<%= asset_path 'picture/18/2165.gif' %>" alt="Sym-a-Pix" title="Sym-a-Pix" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f02">
+								<img src="<%= asset_path 'picture/18/135.gif' %>" alt="Link-a-Pix" title="Link-a-Pix" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f03">
+								<img src="<%= asset_path 'picture/18/85.gif' %>" alt="Fill-a-Pix" title="Fill-a-Pix" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f04">
+								<img src="<%= asset_path 'picture/18/127.gif' %>" alt="Maze-a-Pix" title="Maze-a-Pix" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f05">
+								<img src="<%= asset_path 'picture/18/58.gif' %>" alt="Dot-a-Pix" title="Dot-a-Pix" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f32">
+								<img src="<%= asset_path 'picture/18/4609.gif' %>" alt="Cross-a-Pix" title="Cross-a-Pix" class="pc1" />
+							</a>
+						</li>
+					</ul>
+					<h3>Number Logic puzzles</h3>
+					<ul>
+						<li>
+							<a href="#/f06">
+								<img src="<%= asset_path 'picture/18/164.gif' %>" alt="Sudoku" title="Sudoku" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f07">
+								<img src="<%= asset_path 'picture/18/27.gif' %>" alt="Kakuro" title="Kakuro" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f08">
+								<img src="<%= asset_path 'picture/18/146.gif' %>" alt="Battleships" title="Battleships" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f09">
+								<img src="<%= asset_path 'picture/18/73.gif' %>" alt="Hitori" title="Hitori" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f10">
+								<img src="<%= asset_path 'picture/18/278.gif' %>" alt="Slitherlink" title="Slitherlink" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f11">
+								<img src="<%= asset_path 'picture/18/1003.gif' %>" alt="Hashi" title="Hashi" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f13">
+								<img src="<%= asset_path 'picture/18/1635.gif' %>" alt="CalcuDoku" title="CalcuDoku" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f29">
+								<img src="<%= asset_path 'picture/18/2582.gif' %>" alt="Nurikabe" title="Nurikabe" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f30">
+								<img src="<%= asset_path 'picture/18/3647.gif' %>" alt="Skyscrapers" title="Skyscrapers" class="pc1" />
+							</a>
+						</li>
+						<li>
+							<a href="#/f31">
+								<img src="<%= asset_path 'picture/18/3927.gif' %>" alt="Tic-Tac-Logic" title="Tic-Tac-Logic" class="pc1" />
+							</a>
+						</li>
+					</ul>
 				</div>
 			</td>
-      <td class="content {{= options.fam }}">
+			{{ if(options.fid) { cls = options.families[options.fid].abbreviation; } else { cls = ""; } }}
+			<td class="content {{= cls }}">
 				<div class="mychan border">
 					<div class="puzzlelist">
 						<div class="paging">
-              {{ if(options.page > 1) { }}
-              <a id="newest" style="background-image: url(<%= asset_path 'picture/46/132.gif' %>);" href="#{{= options.option_uri }}/p1">
+							{{ if(options.page > 1) { }}
+							<a id="newest" style="background-image: url(<%= asset_path 'picture/46/132.gif' %>);" href="#{{= options.option_uri }}/p1">
 								<span>&lt;&lt;</span>
 							</a>
 							<span class="prev">
 								<a href="#{{= options.option_uri }}/p{{= options.page-1 }}">Newer</a>
 							</span>
-              {{ } }}
-              {{ for(iPage = Math.max(1, options.page-4); iPage <= options.page + 4 && iPage <= Math.floor((options.total + options.perPage - 1)/options.perPage); iPage++) { }}
-              {{ if(options.page == iPage) { }}
-              <span class="index">{{= iPage }}</span>
-              {{ } else { }}
-              <span class="index">
-                <a href="#{{= options.option_uri }}/p{{= iPage }}">{{= iPage }}</a>
-              </span>
-              {{ } }}
-              {{ } }}
-              {{ if(options.page * options.perPage < options.total) { }}
+							{{ } }}
+							{{ for(iPage = Math.max(1, options.page-4); iPage <= options.page + 4 && iPage <= Math.floor((options.total + options.perPage - 1)/options.perPage); iPage++) { }}
+							{{ if(options.page == iPage) { }}
+							<span class="index">{{= iPage }}</span>
+							{{ } else { }}
+							<span class="index">
+								<a href="#{{= options.option_uri }}/p{{= iPage }}">{{= iPage }}</a>
+							</span>
+							{{ } }}
+							{{ } }}
+							{{ if(options.page * options.perPage < options.total) { }}
 							<span class="next">
 								<a href="#{{= options.option_uri }}/p{{= options.page+1 }}">Older</a>
 							</span>
-              <a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#{{= options.option_uri }}/p{{= Math.floor((options.total + options.perPage - 1) / options.perPage) }}">
+							<a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#{{= options.option_uri }}/p{{= Math.floor((options.total + options.perPage - 1) / options.perPage) }}">
 								<span>&gt;&gt;</span>
 							</a>
-              {{ } }}
+							{{ } }}
 						</div>
 						<div class="paging pagingbottom">
-              {{ if(options.page > 1) { }}
-              <a id="newest" style="background-image: url(<%= asset_path 'picture/46/132.gif' %>);" href="#{{= options.option_uri }}/p1">
+							{{ if(options.page > 1) { }}
+							<a id="newest" style="background-image: url(<%= asset_path 'picture/46/132.gif' %>);" href="#{{= options.option_uri }}/p1">
 								<span>&lt;&lt;</span>
 							</a>
 							<span class="prev">
 								<a href="#{{= options.option_uri }}/p{{= options.page-1 }}">Newer</a>
 							</span>
-              {{ } }}
-              {{ for(iPage = Math.max(1, options.page-4); iPage <= options.page + 4 && iPage <= Math.floor((options.total + options.perPage - 1)/options.perPage); iPage++) { }}
-              {{ if(options.page == iPage) { }}
-              <span class="index">{{= iPage }}</span>
-              {{ } else { }}
-              <span class="index">
-                <a href="#{{= options.option_uri }}/p{{= iPage }}">{{= iPage }}</a>
-              </span>
-              {{ } }}
-              {{ } }}
-              {{ if(options.page * options.perPage < options.total) { }}
+							{{ } }}
+							{{ for(iPage = Math.max(1, options.page-4); iPage <= options.page + 4 && iPage <= Math.floor((options.total + options.perPage - 1)/options.perPage); iPage++) { }}
+							{{ if(options.page == iPage) { }}
+							<span class="index">{{= iPage }}</span>
+							{{ } else { }}
+							<span class="index">
+								<a href="#{{= options.option_uri }}/p{{= iPage }}">{{= iPage }}</a>
+							</span>
+							{{ } }}
+							{{ } }}
+							{{ if(options.page * options.perPage < options.total) { }}
 							<span class="next">
 								<a href="#{{= options.option_uri }}/p{{= options.page+1 }}">Older</a>
 							</span>
-              <a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#{{= options.option_uri }}/p{{= Math.floor((options.total + options.perPage - 1) / options.perPage) }}">
+							<a id="oldest" style="background-image: url(<%= asset_path 'picture/45/132.gif' %>);" href="#{{= options.option_uri }}/p{{= Math.floor((options.total + options.perPage - 1) / options.perPage) }}">
 								<span>&gt;&gt;</span>
 							</a>
-              {{ } }}
+							{{ } }}
 						</div>
 					</div>
 					<div class="clrdiv">

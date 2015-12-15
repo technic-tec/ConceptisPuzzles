@@ -7,11 +7,29 @@ class PuzzlesController < ApplicationController
   # GET /puzzles
   # GET /puzzles.json
   def index
-    @page = (params[:page] || 1).to_i
+    query = params.permit(:family, :variant, :model, :difficulty, :page)
+    if query[:difficulty]
+      @puzzles = Puzzle.joins("LEFT JOIN properties ON puzzles.id = properties.puzzle_id AND properties.name = 'difficulty'").all
+    else
+      @puzzles = Puzzle.all
+    end
+    if query[:family]
+      @puzzles = @puzzles.where(:codeFamily => query[:family])
+    end
+    if query[:variant]
+      @puzzles = @puzzles.where(:codeVariant => query[:variant])
+    end
+    if query[:model]
+      @puzzles = @puzzles.where(:codeModel => query[:model])
+    end
+    if query[:difficulty]
+      @puzzles = @puzzles.where("properties.value = ?", query[:difficulty])
+    end
+    @page = (query[:page] || 1).to_i
     @page = 1 if @page < 1
     @perPage = (params[:per_page] || 12).to_i
-    @total = Puzzle.count;
-    @puzzles = Puzzle.limit(@perPage).offset(@perPage*(@page-1)).map { |puzzle| set_puzzle_save(puzzle) }
+    @total = @puzzles.count;
+    @puzzles = @puzzles.limit(@perPage).offset(@perPage*(@page-1)).map { |puzzle| set_puzzle_save(puzzle) }
   end
 
   # GET /puzzles/1

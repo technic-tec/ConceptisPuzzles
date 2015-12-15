@@ -2,6 +2,7 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
   initialize: (options) ->
     @puzzles = new ConceptisPuzzles.Collections.PuzzlesCollection()
     @puzzles.reset options.puzzles
+    @families = options.config.families
 
   routes:
     "new"      : "newPuzzle"
@@ -40,7 +41,7 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
     if pg is undefined or pg is null
       pg = 1
     options.page = pg
-    @view = new ConceptisPuzzles.Views.Puzzles.IndexView(collection: @puzzles, option_uri: option_uri, pg: pg, family: family)
+    @view = new ConceptisPuzzles.Views.Puzzles.IndexView(collection: @puzzles, option_uri: option_uri, fid: family, families: @families)
     $("#puzzles").html(@view.render().el)
     @puzzles.fetch({data: options, reset: true})
 
