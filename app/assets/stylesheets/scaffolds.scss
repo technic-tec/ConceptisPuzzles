@@ -1,7 +1,6 @@
 html, body, #puzzles, .puzzle-container, .puzzle-container .content {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -10,10 +9,6 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-}
-
-#puzzles, .puzzle-container {
-  overflow-x: scroll;
 }
 
 p, ol, ul, td {
