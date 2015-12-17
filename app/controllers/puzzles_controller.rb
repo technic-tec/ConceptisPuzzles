@@ -29,7 +29,7 @@ class PuzzlesController < ApplicationController
     @page = 1 if @page < 1
     @perPage = (params[:per_page] || 12).to_i
     @total = @puzzles.count;
-    @puzzles = @puzzles.limit(@perPage).offset(@perPage*(@page-1)).map { |puzzle| set_puzzle_save(puzzle) }
+    @puzzles = @puzzles.order(:id).limit(@perPage).offset(@perPage*(@page-1)).map { |puzzle| set_puzzle_save(puzzle) }
   end
 
   # GET /puzzles/1
