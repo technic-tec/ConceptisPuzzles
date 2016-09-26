@@ -450,4 +450,29 @@
 			<flags funnel="true" />
 		</variant>
 	</family>
+	<family>
+		<viewer url="/flash/1/125.swf" />
+		<player url="/flash/2/126.swf" />
+		<interactive url="/index.aspx?uri=puzzle/block-a-pix/interactive" />
+		<nosaveurl url="/index.aspx?uri=info/doc/270" />
+		<genealogy name="Block-a-Pix" code="33" logic="picture" abbreviation="bap" compact="block-a-pix" />
+		<flags funnel="true" homepage="true" synonym="10" display="solution" />
+		<palette>
+			<color rgb="4B7753" name="border" />
+			<color rgb="E5F1E7" name="background" />
+			<color rgb="CCE4D0" name="sidebar" />
+		</palette>
+		<variant>
+			<genealogy code="0" name="B&amp;W" compact="bw" familyRef="33" />
+			<flags funnel="true" />
+		</variant>
+		<variant>
+			<genealogy code="1" name="Color" compact="color" familyRef="33" />
+			<flags funnel="true" />
+		</variant>
+		<variant>
+			<genealogy code="2" name="Mega" compact="mega" familyRef="33" />
+			<flags funnel="true" />
+		</variant>
+	</family>
 </config>
