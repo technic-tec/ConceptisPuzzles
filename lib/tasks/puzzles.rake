@@ -65,4 +65,17 @@ namespace :puzzles do
     }
   end
 
+  desc "Solve puzzle"
+  task :solve, [:puzzle_id] => :environment do |t, args|
+    puzzle = Puzzle.find(args.puzzle_id)
+    case puzzle.codeFamily
+    when 9
+      require './lib/solver/hit.rb'
+      solver = HitSolver.new puzzle
+    else
+      puts "Not supported!"
+      exit
+    end
+    solver.solve
+  end
 end
