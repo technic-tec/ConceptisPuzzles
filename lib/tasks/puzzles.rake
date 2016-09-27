@@ -10,58 +10,45 @@ namespace :puzzles do
   end
 
   desc "import puzzles from xml files"
-  task :import, [:filenames] => :environment do |t, args|
-    unless args.filenames
+  task :import, [:filename] => :environment do |t, args|
+    unless args.filename
       fail "Import file name must be supplied"
     end
     require 'yaml'
     require 'psych'
     require 'nokogiri'
-    id = 0
-    pid = 0
-    File.open(Rails.root.join('config', 'puzzles.yml')) { |f|
-      Psych.load_stream(f) {|doc|
-        id += 1
+    require 'open-uri'
+    id = Puzzle.maximum(:id) || 0
+    pid = Property.maximum(:id) || 0
+    ActiveRecord::Base.transaction {
+      id += 1
+      doc = Nokogiri.XML(open(filename))
+      root = doc.root
+      puzzle = {
+        "id" => id,
+        "data" => (root>"data").first.children.to_xml
       }
-    }
-    File.open(Rails.root.join('config', 'properties.yml')) { |f|
-      Psych.load_stream(f) {|doc|
-        pid += 1
-      }
-    }
-    File.open(Rails.root.join('config', 'puzzles.yml'), "a") { |fplz|
-      File.open(Rails.root.join('config', 'properties.yml'), "a") { |fpro|
-        Dir.glob(args[:filenames]) {|filename|
-          id += 1
-          doc = Nokogiri.XML(File.read(filename))
-          root = doc.root
-          puzzle = {
-            "id" => id,
-            "data" => (root>"data").first.children.to_xml
+      (root>"header").first.element_children.each { |elem|
+        if elem.name == 'properties'
+          elem.element_children.each { |p|
+            pid += 1
+            property = {"id" => pid, "attr_type" => p.name, "puzzle_id" => id}
+            p.attributes.each { |key, attr|
+              property[key] = attr.value
+            }
+            property["value"] ||= p.text
+            Property.create! property
           }
-          (root>"header").first.element_children.each { |elem|
-            if elem.name == 'properties'
-              elem.element_children.each { |p|
-                pid += 1
-                property = {"id" => pid, "attr_type" => p.name, "puzzle_id" => id}
-                p.attributes.each { |key, attr|
-                  property[key] = attr.value
-                }
-                property["value"] ||= p.text
-                YAML.dump(property, fpro)
-              }
-            else
-              name = elem.name
-              name = 'version' if name == 'formatVersion'
-              elem.attributes.each { |key, attr|
-                puzzle["#{name}_#{key}".camelize(:lower)] = attr.value
-              }
-              puzzle["#{name}"] = elem.text.strip if elem.text.strip != ''
-            end
+        else
+          name = elem.name
+          name = 'version' if name == 'formatVersion'
+          elem.attributes.each { |key, attr|
+            puzzle["#{name}_#{key}".camelize(:lower)] = attr.value
           }
-          YAML.dump(puzzle, fplz)
-        }
+          puzzle["#{name}"] = elem.text.strip if elem.text.strip != ''
+        end
       }
+      Puzzle.create! puzzle
     }
   end
 
