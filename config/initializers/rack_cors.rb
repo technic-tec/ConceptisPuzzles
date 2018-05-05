@@ -1,6 +1,6 @@
-Rails.application.config.middleware.use "Rack::Cors", :debug => true, :logger => (-> { Rails.logger }) do
+Rails.application.config.middleware.use Rack::Cors, :debug => true, :logger => (-> { Rails.logger }) do
   allow do
-    origins '*'
+    origins 'localhost'
     resource '/cors',
       :headers => :any,
       :methods => [:get],

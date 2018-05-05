@@ -7,17 +7,17 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 require 'active_record/fixtures'
-File.open(Rails.root.join('config', 'puzzles.yml')) { |f|
-  ActiveRecord::Base.transaction {
-    Psych.load_stream(f) {|doc|
-      Puzzle.create! doc
-    }
-  }
-}
-File.open(Rails.root.join('config', 'properties.yml')) { |f|
-  ActiveRecord::Base.transaction {
-    Psych.load_stream(f) {|doc|
-      Property.create! doc
-    }
-  }
-}
+#File.open(Rails.root.join('config', 'puzzles.yml')) { |f|
+#  ActiveRecord::Base.transaction {
+#    Psych.load_stream(f) {|doc|
+#      Puzzle.create! doc
+#    }
+#  }
+#}
+#File.open(Rails.root.join('config', 'properties.yml')) { |f|
+#  ActiveRecord::Base.transaction {
+#    Psych.load_stream(f) {|doc|
+#      Property.create! doc
+#    }
+#  }
+#}

@@ -1,1 +1,1 @@
-Rails.application.config.middleware.use "CorsProxy"
+Rails.application.config.middleware.use CorsProxy

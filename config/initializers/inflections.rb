@@ -14,7 +14,3 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym 'RESTful'
 # end
-ActiveSupport::Inflector.inflections(:en) do |inflect|
-      inflect.singular 'PuzzleSaves',  'PuzzleSave'
-      inflect.singular 'puzzle_saves',  'puzzle_save'
-end
