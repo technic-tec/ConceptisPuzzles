@@ -18,30 +18,30 @@ class PuzzlesControllerTest < ActionController::TestCase
 
   test "should create puzzle" do
     assert_difference('Puzzle.count') do
-      post :create, puzzle: { builderVersion: @puzzle.builderVersion, codeFamily: @puzzle.codeFamily, codeModel: @puzzle.codeModel, codeVariant: @puzzle.codeVariant, creationDate: @puzzle.creationDate, data: @puzzle.data, guid: @puzzle.guid, releaseDate: @puzzle.releaseDate, serialNumber: @puzzle.serialNumber, versionMajor: @puzzle.versionMajor, versionMinor: @puzzle.versionMinor }
+      post :create, params:{puzzle: { builderVersion: @puzzle.builderVersion, codeFamily: @puzzle.codeFamily, codeModel: @puzzle.codeModel, codeVariant: @puzzle.codeVariant, creationDate: @puzzle.creationDate, data: @puzzle.data, guid: @puzzle.guid, releaseDate: @puzzle.releaseDate, serialNumber: @puzzle.serialNumber, versionMajor: @puzzle.versionMajor, versionMinor: @puzzle.versionMinor }}
     end
 
     assert_redirected_to puzzle_path(assigns(:puzzle))
   end
 
   test "should show puzzle" do
-    get :show, id: @puzzle
+    get :show, params:{id: @puzzle}
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @puzzle
+    get :edit, params:{id: @puzzle}
     assert_response :success
   end
 
   test "should update puzzle" do
-    patch :update, id: @puzzle, puzzle: { builderVersion: @puzzle.builderVersion, codeFamily: @puzzle.codeFamily, codeModel: @puzzle.codeModel, codeVariant: @puzzle.codeVariant, creationDate: @puzzle.creationDate, data: @puzzle.data, guid: @puzzle.guid, releaseDate: @puzzle.releaseDate, serialNumber: @puzzle.serialNumber, versionMajor: @puzzle.versionMajor, versionMinor: @puzzle.versionMinor }
+    patch :update, params:{id: @puzzle, puzzle: { builderVersion: @puzzle.builderVersion, codeFamily: @puzzle.codeFamily, codeModel: @puzzle.codeModel, codeVariant: @puzzle.codeVariant, creationDate: @puzzle.creationDate, data: @puzzle.data, guid: @puzzle.guid, releaseDate: @puzzle.releaseDate, serialNumber: @puzzle.serialNumber, versionMajor: @puzzle.versionMajor, versionMinor: @puzzle.versionMinor }}
     assert_redirected_to puzzle_path(assigns(:puzzle))
   end
 
   test "should destroy puzzle" do
     assert_difference('Puzzle.count', -1) do
-      delete :destroy, id: @puzzle
+      delete :destroy, params:{id: @puzzle}
     end
 
     assert_redirected_to puzzles_path

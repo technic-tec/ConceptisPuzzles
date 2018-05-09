@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   #protect_from_forgery with: :exception
   protect_from_forgery with: :null_session,  if: Proc.new { |c| c.request.format == 'application/json' || c.request.format == 'application/xml' }
 
-  before_filter :get_current_user
+  before_action :get_current_user
 
   def get_current_user
     if !@current_user and session[:user_id]

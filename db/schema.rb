@@ -21,8 +21,6 @@ ActiveRecord::Schema.define(version: 20151130104004) do
     t.string "value"
     t.string "unit"
     t.integer "puzzle_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["puzzle_id"], name: "index_properties_on_puzzle_id"
   end
 
@@ -38,8 +36,6 @@ ActiveRecord::Schema.define(version: 20151130104004) do
     t.string "member_ref"
     t.string "serial"
     t.text "data"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["puzzle_id", "member_ref"], name: "index_puzzle_saves_on_puzzle_id_and_member_ref"
   end
 
@@ -69,8 +65,6 @@ ActiveRecord::Schema.define(version: 20151130104004) do
     t.string "refresh_token"
     t.string "access_token"
     t.datetime "expires"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["provider", "uid"], name: "index_users_on_provider_and_uid"
   end
 
