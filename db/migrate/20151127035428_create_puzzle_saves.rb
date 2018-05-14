@@ -1,4 +1,4 @@
-class CreatePuzzleSaves < ActiveRecord::Migration
+class CreatePuzzleSaves < ActiveRecord::Migration[5.1]
   def change
     create_table :puzzle_saves do |t|
       t.integer :puzzle_id

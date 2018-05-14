@@ -1,4 +1,4 @@
-class ChangeDateFormatInPuzzles < ActiveRecord::Migration
+class ChangeDateFormatInPuzzles < ActiveRecord::Migration[5.1]
   def up
     change_column :puzzles, :creationDate, :datetime
     change_column :puzzles, :releaseDate, :datetime
