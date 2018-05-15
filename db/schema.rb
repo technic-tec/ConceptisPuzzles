@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180514191530) do
+ActiveRecord::Schema.define(version: 20180515162258) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20180514191530) do
     t.string "member_ref"
     t.string "serial"
     t.text "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.index ["puzzle_id", "member_ref"], name: "index_puzzle_saves_on_puzzle_id_and_member_ref"
   end
 
