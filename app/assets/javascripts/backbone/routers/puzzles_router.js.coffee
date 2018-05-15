@@ -6,7 +6,7 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
 
   routes:
     "new"      : "newPuzzle"
-    "(f:family)(/)(v:variant)(/)(m:model)(/)(d:difficulty)(/)(p:pg)"     : "index"
+    "(f:family)(/)(v:variant)(/)(m:model)(/)(d:difficulty)(/)(r:publish)(/)(p:pg)"     : "index"
     ":id/edit" : "edit"
     ":id"      : "show"
     ".*"        : "index"
@@ -23,7 +23,7 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
     @view = new ConceptisPuzzles.Views.Puzzles.NewView(collection: @puzzles)
     $("#puzzles").html(@view.render().el)
 
-  index: (family, variant, model, difficulty, pg)->
+  index: (family, variant, model, difficulty, publish, pg)->
     options = {}
     option_uri = ""
     if family
@@ -38,6 +38,9 @@ class ConceptisPuzzles.Routers.PuzzlesRouter extends Backbone.Router
     if difficulty
       options.difficulty = difficulty
       option_uri += "/d#{difficulty}"
+    if publish
+      options.publishDate = publish
+      option_uri += "/r#{publish}"
     if pg is undefined or pg is null
       pg = 1
     options.page = pg

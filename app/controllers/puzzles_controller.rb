@@ -7,7 +7,7 @@ class PuzzlesController < ApplicationController
   # GET /puzzles
   # GET /puzzles.json
   def index
-    query = params.permit(:family, :variant, :model, :difficulty, :page)
+    query = params.permit(:family, :variant, :model, :difficulty, :publishDate, :page)
     if query[:difficulty]
       @puzzles = Puzzle.joins("LEFT JOIN properties ON puzzles.id = properties.puzzle_id AND properties.name = 'difficulty'").all
     else
@@ -24,6 +24,9 @@ class PuzzlesController < ApplicationController
     end
     if query[:difficulty]
       @puzzles = @puzzles.where("properties.value = ?", query[:difficulty])
+    end
+    if query[:publishDate]
+      @puzzles = @puzzles.where(:publishDate => query[:publishDate])
     end
     @page = (query[:page] || 1).to_i
     @page = 1 if @page < 1
